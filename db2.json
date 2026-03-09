@@ -1,0 +1,3370 @@
+[
+  {
+    "questionnumber": 1,
+    "topic": "DB2",
+    "question": "FULL FORM OF SQL -",
+    "option_1": "Structured Query Language",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 2,
+    "topic": "DB2",
+    "question": "WHO IS RESPONSIBLE TO CREATE TABLES AND INDEXES?",
+    "option_1": "DBA.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 3,
+    "topic": "DB2",
+    "question": "GENERALLY ACCESS TO BIND PRODUCTION PACKAGES AND PLANS IS DONE BY",
+    "option_1": "PHANTOM READ",
+    "option_2": "DIRTY READ",
+    "option_3": "NON-REPEATABLE READ",
+    "option_4": "NONE 4.THE EVENT THAT OCCURS WHEN ROW OF DATA MATCHES SOME SEARCH CRITERIA BUT IN THE INITIAL READ IS NOT SEEN IS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 4,
+    "topic": "DB2",
+    "question": "Primary key can be :",
+    "option_1": "CREATE TABLE TABLE1 (COL1 CHAR(5), COL2 CHAR(30) , PRIMARY KEY (COL1))",
+    "option_2": "CREATE TABLE TABLE1 (COL1 CHAR(5) NOT NULL, COL2 CHAR(30), PRIMARY KEY (COL1))",
+    "option_3": "CREATE TABLE TABLE1 (COL1 CHAR(5), COL2 CHAR(30) NOT NULL, PRIMARY KEY (COL1))",
+    "option_4": "CREATE TABLE TABLE1 (COL1 CHAR(5) NOT NULL, COL2 CHAR(30) NOT NULL)",
+    "option_5": "BOOKS table is parent as well as dependent table 8)A small integer (SMALLINT) is a ____ byte field.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 5,
+    "topic": "DB2",
+    "question": "The value saved in the null indicator variable when the data returned from the table is not null",
+    "option_1": "-1",
+    "option_2": "-2",
+    "option_3": "0",
+    "option_4": "+1",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 6,
+    "topic": "DB2",
+    "question": "What is correct to say about DBRM?",
+    "option_1": "A DBRM can be bound into a package",
+    "option_2": "A DBRM can be bound into a plan",
+    "option_3": "A DBRM can be bound into a collection",
+    "option_4": "A DBRM can be bound into a package or plan .",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 7,
+    "topic": "DB2",
+    "question": "WHICH TYPE OF KEY IS DEFINED ON PARENT TABLE TO I MPLEMENT REFRENTIAL CONTRAINTS?",
+    "option_1": "PROD",
+    "option_2": "ADMIN",
+    "option_3": "USER",
+    "option_4": "NO ONE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 8,
+    "topic": "DB2",
+    "question": "Avoid",
+    "option_1": "ve SQLCODEs by handling nulls and zeroes in computations",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 9,
+    "topic": "DB2",
+    "question": "Based on the lock",
+    "option_1": "size given while creating the tablespace",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 10,
+    "topic": "DB2",
+    "question": "Uninitialized working",
+    "option_1": "storage data fields contain_______, also known as__________.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 11,
+    "topic": "DB2",
+    "question": "NAME 3 VALUES THAT CAN BE GIVEN IN OPERATION FIELD OF JCL",
+    "option_1": "job , exec, dd",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 12,
+    "topic": "DB2",
+    "question": "NAME THE COMMAND TO SEND A JOB/JCL FOR EXECUTION",
+    "option_1": "SUBMIT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 13,
+    "topic": "DB2",
+    "question": "FULL FORM OF DCB",
+    "option_1": "data control block",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 14,
+    "topic": "DB2",
+    "question": "FULL FORM OF SPUFI",
+    "option_1": "SQL Processing using File input.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 15,
+    "topic": "DB2",
+    "question": "IS A PRIMARY KEY MANDATORY ON A TABLE?",
+    "option_1": "FALSE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 16,
+    "topic": "DB2",
+    "question": "Which SQLCODE is REFERED TO table name not found",
+    "option_1": "-811",
+    "option_2": "- 803",
+    "option_3": "-204",
+    "option_4": "- 540",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 17,
+    "topic": "DB2",
+    "question": "The process of replacing the SQL statements with program library calls is done by:",
+    "option_1": "COMPILER",
+    "option_2": "PRECOMPILER",
+    "option_3": "LINKER",
+    "option_4": "BIND",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 18,
+    "topic": "DB2",
+    "question": "WHAT TERM IS USED TO MEAN HARCODING SQL IN COBOL",
+    "option_1": "EMBEDDED SQL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 19,
+    "topic": "DB2",
+    "question": "Programmer can direct the DB2 what lock",
+    "option_1": "size to use",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 20,
+    "topic": "DB2",
+    "question": "A PERFORM UNTIL\u2026\u2026. END",
+    "option_1": "PERFORM is called as_______________. F i l l t h e c o r r e s p o n d i n g :",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 21,
+    "topic": "DB2",
+    "question": "NAME 3 VALUES THAT CAN BE GIVEN IN IDENTIFIER FIELD",
+    "option_1": "// /* //*",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 22,
+    "topic": "DB2",
+    "question": "NAME THE ISPF OPTION TO ALLOCATE A DATASET",
+    "option_1": "3.2",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 23,
+    "topic": "DB2",
+    "question": "NAME ALL THE POSSIBLE VALUES OF RECFM ( 5 values)",
+    "option_1": "fb,vb,u,f,v",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 24,
+    "topic": "DB2",
+    "question": "FULL FORM OF QMF",
+    "option_1": "Query Management Facility.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 25,
+    "topic": "DB2",
+    "question": "WHAT IS DEFINITION OF A PK?",
+    "option_1": "PRIMARY KEY IS THE COMBINATION OF NOT NULL AND UNIQUE.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 26,
+    "topic": "DB2",
+    "question": "What is the function used to retrieve all the rows without eliminating d uplicate values",
+    "option_1": "Simple and complex",
+    "option_2": "Static and Dynamic",
+    "option_3": "Re-entrant and Non re-entrant",
+    "option_4": "Non of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 27,
+    "topic": "DB2",
+    "question": "A SELECT statement that could return more than o ne row to an application program must be coded using what kind of processing?",
+    "option_1": "Data processing",
+    "option_2": "Cursor processing",
+    "option_3": "Statement processing",
+    "option_4": "File processing",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 28,
+    "topic": "DB2",
+    "question": "For step restart,if the last generation data set created and cataloged was assigned a generation number of +2,how s hould we refer to it in the restart step and in steps following the restart step?",
+    "option_1": "Refer as 0.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 29,
+    "topic": "DB2",
+    "question": "A SELECT statement that could return more than one row to an application program must be coded using what kind of processing?",
+    "option_1": "Data processing",
+    "option_2": "Cursor processing",
+    "option_3": "Statement processing",
+    "option_4": "File processing",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 30,
+    "topic": "DB2",
+    "question": "CONTINUED PARAMETER SHOULD BE CODE IN WHICH COLUMN",
+    "option_1": "4-16",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 31,
+    "topic": "DB2",
+    "question": "DIRECTORY BLOCK OF 1 CREATES HOW MANY MEMBERS",
+    "option_1": "5",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 32,
+    "topic": "DB2",
+    "question": "Relocation of rows to different pages can lead to more I/Os on retrieval. 113.How do I create a table MANAGER ( EMP#, MANAGER) where MANAGER is a foreign key which references to EMP# in the same table? Give the exact DDL. First CREATE MANAGER table with EMP# as the primary key. Then ALTER it to define the foreign key. 114.When is the authorization check on DB2 objects done - at BIND time or run time? At run time. 115.What is auditing? Recording SQL statements that access a table. Specified at table creation time or thru alter. 1.WHAT IS DATATYPE OF TIMESTAMP IN COBOL",
+    "option_1": "X(26)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 33,
+    "topic": "DB2",
+    "question": "WHICH UTILITY IS USED TO ACHIEVE POINT IN TIME RECOVERY",
+    "option_1": "COPY",
+    "option_2": "QUIESCE",
+    "option_3": "MERGE COPY",
+    "option_4": "REPORT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 34,
+    "topic": "DB2",
+    "question": "WHAT KIND OF A DATABASE IS DB2",
+    "option_1": "NAME AND DATATYPE AND DEFAULT VALUE",
+    "option_2": "NAME AND DATATYPE AND NULL FEATURE",
+    "option_3": "NAME AND NULL FEATURE AND SELECT",
+    "option_4": "NAME AND NULL FEATURE AND DEFAULT VALUE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 35,
+    "topic": "DB2",
+    "question": "A TABLE CAN HAVE ONLY 1 ___ INDEX . UNIQUE, NON",
+    "option_1": "UNIQUE, CLUSTERED , NON CLUSTERED",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 36,
+    "topic": "DB2",
+    "question": "What must host variables begin with when they ar e used within SQL delimiters?",
+    "option_1": "A comma",
+    "option_2": "A colon",
+    "option_3": "A prefix HV",
+    "option_4": "A prefix WSIf",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 37,
+    "topic": "DB2",
+    "question": "What must host variables begin with when they are used within SQL delimiters?",
+    "option_1": "A comma",
+    "option_2": "A colon",
+    "option_3": "A prefix HV",
+    "option_4": "A prefix WSIf choice b is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 38,
+    "topic": "DB2",
+    "question": "JCL IS CODED IN WHICH RANGE OF COLUMNS",
+    "option_1": "1 to 72",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 39,
+    "topic": "DB2",
+    "question": "NAME THE COMMAND TO GO TO THE SPOOL",
+    "option_1": "TSO SD SDSF",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 40,
+    "topic": "DB2",
+    "question": "DOUBLE DATATYPE REQUIRES 8 BYTES OF STORAGE IN DB2",
+    "option_1": "ACCESS BACKWARDS",
+    "option_2": "ACCESS FORWARDS",
+    "option_3": "A & b",
+    "option_4": "RANDOM",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 41,
+    "topic": "DB2",
+    "question": "FOR BETTER SEQUENTIAL ACCESS, WHICH INDEX IS EFFICIENT?",
+    "option_1": "CLUSTERED",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 42,
+    "topic": "DB2",
+    "question": "WHICH LOCK IS USED IF EVERY ROW IN A TABLE IS TO BE UPDATED",
+    "option_1": "NUMERIC",
+    "option_2": "CHAR",
+    "option_3": "ANY",
+    "option_4": "OPERATOR 10.BACKUP/RECOVERY IS DONE BY 11.SELECT * FROM EMP WHERE DEPT=38 ORDER BY DEPT 12.DATA TYPE OF AVG, SUM MUST BE -----NUMERIC____ TYPE MIN ,MAX CAN BE -----ANY___ TYPE 13.WHAT DOES GRANT TO PUBLIC IMPLY?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 43,
+    "topic": "DB2",
+    "question": "As part of a subquery, what does IN do?",
+    "option_1": "It allows DB2 to eliminate some values.",
+    "option_2": "It allows DB2 to return multiple values.",
+    "option_3": "Both A & B",
+    "option_4": "None of the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_2",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 44,
+    "topic": "DB2",
+    "question": "Write down the special rules for non",
+    "option_1": "numeric literals for an above example.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 45,
+    "topic": "DB2",
+    "question": "Identify the type of CALL statement being executed.CALL PROGAUSING",
+    "option_1": "CALL with reference",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 46,
+    "topic": "DB2",
+    "question": "IF A JCL NEEDS TO GO ONLY FOR A SYNTAX CHECK WHICH PARAMETER AND VALUE IS REQUIRED",
+    "option_1": "typrun=scan",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 47,
+    "topic": "DB2",
+    "question": "A STANDARD JOBNAME SHOULD BE HOW MANY CHARACTERS",
+    "option_1": "8",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 48,
+    "topic": "DB2",
+    "question": "FOR FASTER RETRIEVAL OF ROWS , ___ IS RECOMMENDED ON THE COLUMN.",
+    "option_1": "index.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 49,
+    "topic": "DB2",
+    "question": "For SQL Data Type DATE , the COBOL Data Type wil l be",
+    "option_1": "X(4)",
+    "option_2": "X(6)",
+    "option_3": "X(8)",
+    "option_4": "X(10)",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_2",
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 50,
+    "topic": "DB2",
+    "question": "For SQL Data Type DATE , the COBOL Data Type will be",
+    "option_1": "X(4)",
+    "option_2": "X(6)",
+    "option_3": "X(8)",
+    "option_4": "X(10)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 51,
+    "topic": "DB2",
+    "question": "WHICH PARAMETER WILL SEND JOB ENDED MSG TO ANOTHER USER",
+    "option_1": "notify= &sysuid",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 52,
+    "topic": "DB2",
+    "question": "WHAT ARE THE SUBVALUES IN THE SPACE PARAMETER",
+    "option_1": "PRIMARY,SECONDARY,DIRECTORY BLOCK",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 53,
+    "topic": "DB2",
+    "question": "NAME THE UTILITY TO COPY FROM PS TO PS",
+    "option_1": "IEBGENER",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 54,
+    "topic": "DB2",
+    "question": "THE ____ KEY GARANTEES THAT VALUES IN A COLUMN ARE ALWAYS UNIQUE",
+    "option_1": "PRIMARY",
+    "option_2": "FOREIGN",
+    "option_3": "UNIQUE",
+    "option_4": "NULL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 55,
+    "topic": "DB2",
+    "question": "INDEXES CAN BE CREATED ON ONE OR MORE COLUMNS (T/F)",
+    "option_1": "True",
+    "option_2": "False",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 56,
+    "topic": "DB2",
+    "question": "What are the two basic parts to a table name?",
+    "option_1": "The table name and its identifier",
+    "option_2": "The creator of the table and its identifier",
+    "option_3": "The creation date and expiration date",
+    "option_4": "The creator/owner/schema of the table and the simple table name",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 57,
+    "topic": "DB2",
+    "question": "What\u2019s the length of program name in PROGRAM",
+    "option_1": "Id. _________?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 58,
+    "topic": "DB2",
+    "question": "Which statement is true regarding JCL procedures?Assume that we specify symbols in records in an in-stream data set defined by the DD* or data parameter",
+    "option_1": "The system substitutes text for symbols in SYSIN data",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 59,
+    "topic": "DB2",
+    "question": "WHAT DOES MSGLEVEL=(0,1) IMPLY",
+    "option_1": "only the  job statements to be displayed,all allocation message",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 60,
+    "topic": "DB2",
+    "question": "WHAT SHOULD BE THE VALUE OF BLKSIZE",
+    "option_1": "0 or omitblksize (default)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 61,
+    "topic": "DB2",
+    "question": "WHAT IS SIGNIFICANCE OF SYSUID",
+    "option_1": "system userid 8.NULL STMT CAN BE CODED AS ___//",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 62,
+    "topic": "DB2",
+    "question": "IN IX LOCK, READING AND UPDATING POSSIBLE?",
+    "option_1": "YES",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 63,
+    "topic": "DB2",
+    "question": "THE PRIMARY KEY ON A TABLE COLUMN IS MANDATORY (T/F)",
+    "option_1": "True",
+    "option_2": "False",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 64,
+    "topic": "DB2",
+    "question": "WHAT IS STORAGE GROUP? WHO IS RESPONSIBLE TO CREATE ? -",
+    "option_1": "VOLUME SERIAL NOS TO DB2 AND SYSADMIN.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 65,
+    "topic": "DB2",
+    "question": "Which command is used to remove duplicates from the result of a SELECT statement?",
+    "option_1": "No duplicates",
+    "option_2": "With no duplicates",
+    "option_3": "Distinct",
+    "option_4": "Unique",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 66,
+    "topic": "DB2",
+    "question": "WHAT IS &SYSUID VALUE",
+    "option_1": "user id or logon id",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 67,
+    "topic": "DB2",
+    "question": "DELETING A MEMBER CAN BE DONE FROM EITHER ____ OR ____ OPTION OF ISPF",
+    "option_1": "3.1 OR 3.4",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 68,
+    "topic": "DB2",
+    "question": "IN SELECT * FROM table-name , WHAT DOES * IMPLY?",
+    "option_1": "DELETE TABLE",
+    "option_2": "DEALLOCATE TABLE",
+    "option_3": "DROP TABLE",
+    "option_4": "DROP COLUMN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 69,
+    "topic": "DB2",
+    "question": "SQL WRITTEN INSIDE A SOURCE LANGUAGE IS CALLED ____",
+    "option_1": "EMBEDDED SQL.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 70,
+    "topic": "DB2",
+    "question": "The precompiler performs the following:",
+    "option_1": "Includes DCLGEN member and SQLCA",
+    "option_2": "Verifies the SQL syntax",
+    "option_3": "Looks for SQL statements and for host-variable definitions",
+    "option_4": "All of the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_2",
+      "option_3",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 71,
+    "topic": "DB2",
+    "question": "JAPANESE CHARACTERS CAN BE STORED IN WHICH DATATY PE?",
+    "option_1": "GRAPHIC   (REPEATED)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 72,
+    "topic": "DB2",
+    "question": "The value of an ________ is the displacement from the begining of the table based on the length of the table and s ubscript is a positive number whose value indicates the occurance of a table element.",
+    "option_1": "Subscript",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 73,
+    "topic": "DB2",
+    "question": "WHICH PARAMETER CONTROLS THE NUMBER OF LINES GENERATED IN THE JOBLOG",
+    "option_1": "lines parameter",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 74,
+    "topic": "DB2",
+    "question": "JAPANESE CHARACTERS CAN BE STORED IN WHICH DATATYPE?",
+    "option_1": "GRAPHIC",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 75,
+    "topic": "DB2",
+    "question": "THE SQL TO TAKE AWAY AN ACCESS IS ____",
+    "option_1": "REVOKE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 76,
+    "topic": "DB2",
+    "question": "Which program do you use to run a COBOL-DB2 Bat ch application?",
+    "option_1": "IKJEFD01",
+    "option_2": "IKJEFT01",
+    "option_3": "IKJEFD02",
+    "option_4": "IKJEFT02",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 77,
+    "topic": "DB2",
+    "question": "OBJECT MODULES ARE CREATED BY ____",
+    "option_1": "PRECOMPILER",
+    "option_2": "COMPILER",
+    "option_3": "LINK-EDIT",
+    "option_4": "BIND",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 78,
+    "topic": "DB2",
+    "question": "Which program do you use to run a COBOL-DB2 Batch application?",
+    "option_1": "IKJEFD01",
+    "option_2": "IKJEFT01",
+    "option_3": "IKJEFD02",
+    "option_4": "IKJEFT02",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 79,
+    "topic": "DB2",
+    "question": "WHAT IS TIME=1440 MEAN",
+    "option_1": "no limit",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 80,
+    "topic": "DB2",
+    "question": "WRITE THE DISP VALUE FOR DELETING A DATASET",
+    "option_1": "DISP=OLD,DELETE,DELETE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 81,
+    "topic": "DB2",
+    "question": "MSGCLASS is used for",
+    "option_1": "Messenger detail",
+    "option_2": "Messages send by JCL will move to which class out of available classes",
+    "option_3": "Messages are of what category or class",
+    "option_4": "messages are coming from which class out of available classes",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 82,
+    "topic": "DB2",
+    "question": "THE SQL TO GIVE AN ACCESS IS ___",
+    "option_1": "GRANT.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 83,
+    "topic": "DB2",
+    "question": "Which one of the following statements best desc ribe a SMALLINT?",
+    "option_1": "It is a four-byte integer that has a range of + or - two billion.",
+    "option_2": "It is a signed half word that takes up two byt es. It contains a value up to + or - 32K",
+    "option_3": "It is a packed decimal number.",
+    "option_4": "It is a hexidecimal number.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 84,
+    "topic": "DB2",
+    "question": "What is the significance of the following of the below mentioned step? consider A,B,C to be a GDG base. //ST01 EXEC PGM=IDCAMS //SYSPRINT DD SYSOUT=* //SYSIN DD LISTCAT ENTRIES(A,B,C)-GDG-ALL/*",
+    "option_1": "Lists the GDG catalog information",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 85,
+    "topic": "DB2",
+    "question": "Which one of the following statements best describe a SMALLINT?",
+    "option_1": "It is a four-byte integer that has a range of + or - two billion.",
+    "option_2": "It is a signed half word that takes up two bytes. It contains a value up to + or - 32K",
+    "option_3": "It is a packed decimal number.",
+    "option_4": "It is a hexidecimal number.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 86,
+    "topic": "DB2",
+    "question": "//xyz DD SYSOUT=A is used for",
+    "option_1": "system to go out or exit thru device A",
+    "option_2": "system messages for xyz to be directed to device A",
+    "option_3": "data will be received from device A",
+    "option_4": "xyz is assigned to device a dedicatedly for system input-output",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 87,
+    "topic": "DB2",
+    "question": "STATE THE SYNTAX OF INDICATOR VARIABLE",
+    "option_1": ":HVARIABLE:IVARIABLE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 88,
+    "topic": "DB2",
+    "question": "WHAT ACCESS IS NEEDED FROM SYSADM TO A PERSON WHO CAN BE A DB2 ADMIN?",
+    "option_1": "DBA GRANT ACCESS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 89,
+    "topic": "DB2",
+    "question": "How many unique keys can be defined for a table?",
+    "option_1": "Just one",
+    "option_2": "Just two",
+    "option_3": "Just three",
+    "option_4": "More than one",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 90,
+    "topic": "DB2",
+    "question": "STATE THE PIC CLAUSE OF INDICATOR VARIABLE",
+    "option_1": "S9(4) COMP",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 91,
+    "topic": "DB2",
+    "question": "IF TIME",
+    "option_1": "MAXIMUM CODED, HOW MANY MONTHS CAN THE PROGRAM RUN 8 months 25 days",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 92,
+    "topic": "DB2",
+    "question": "which one is optional here://BADJOB JOB (378,'6/10),DISK,MSGLEVEL=(1,1)",
+    "option_1": "BADJOB",
+    "option_2": "JOB",
+    "option_3": "MSGLEVEL=(1,1)",
+    "option_4": "all of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 93,
+    "topic": "DB2",
+    "question": "WHAT IS THE DATAYPE IN COBOL FOR THE FOLLOWING",
+    "option_1": "DATE - X(10)",
+    "option_2": "TIME -   X(8)",
+    "option_3": "TIMESTAMP - X(26)",
+    "option_4": "VARCHAR  - VARIES.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 94,
+    "topic": "DB2",
+    "question": "WHAT IS SQL TO DELETE A TABLE",
+    "option_1": "DROP TABLE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 95,
+    "topic": "DB2",
+    "question": "The full forms of SQLCA and DBRM respectively a re:",
+    "option_1": "SQL Communication Area and Data Base Resource Module",
+    "option_2": "SQL Common Area and Data Base Request Module",
+    "option_3": "SQL Common Area and Data Base Resource Module",
+    "option_4": "SQL Communication Area and Data Base Request M odule",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 96,
+    "topic": "DB2",
+    "question": "What are the three different access methods for accessing records from files?",
+    "option_1": "Sequential,Random and Dynamic",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 97,
+    "topic": "DB2",
+    "question": "Explain Control Interval Split and Control Area Split ? Problem: No free CI\u2019s in CA Solution:",
+    "option_1": "- - - -",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 98,
+    "topic": "DB2",
+    "question": "The full forms of SQLCA and DBRM respectively are:",
+    "option_1": "SQL Communication Area and Data Base Resource Module",
+    "option_2": "SQL Common Area and Data Base Request Module",
+    "option_3": "SQL Common Area and Data Base Resource Module",
+    "option_4": "SQL Communication Area and Data Base Request Module",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 99,
+    "topic": "DB2",
+    "question": "REGION PARAMETER IS FOR A) CENTRAL STORAGE B) VIRTUAL STORAGE C) DASD",
+    "option_4": "TAPE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 100,
+    "topic": "DB2",
+    "question": "WHAT DOES RLSE DO?",
+    "option_1": "release the unused space",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 101,
+    "topic": "DB2",
+    "question": "//xyz DD SYSOUT=* will result",
+    "option_1": "system to send messages to SYSOUT in job spool",
+    "option_2": "system will send messages to all devices available",
+    "option_3": "system will send message to default device",
+    "option_4": "messages will be sent out but not stored anywhere",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 102,
+    "topic": "DB2",
+    "question": "WHAT OPTION TO BE GIVEN FOR CREATED TABLE NOT TO BE DROPPED",
+    "option_1": "RACF ID",
+    "option_2": "CATALOG",
+    "option_3": "BOTH",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 103,
+    "topic": "DB2",
+    "question": "WHAT SIGNIFIES A COMMENT IN SPUFI? - (/* OR --) 15.WHAT DOES 'DISTINCT' DO FOR A COLUMN?",
+    "option_1": "Gives distinct values of that column.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 104,
+    "topic": "DB2",
+    "question": "WHAT SIGNIFIES A COMMENT IN SPUFI?",
+    "option_1": "(/* OR --) 15.WHAT DOES 'DISTINCT' DO FOR A COLUMN?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 105,
+    "topic": "DB2",
+    "question": "NAME THE 4 DML STMTS",
+    "option_1": "SELECT, INSERT , DELETE , UPDATE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 106,
+    "topic": "DB2",
+    "question": "IF ENTIRE TABLE IS TO BE LOCKED, WHICH ISOLATION TO USE?",
+    "option_1": "RR",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 107,
+    "topic": "DB2",
+    "question": "DB2 is not accessed during precompilation proce ss,,((BIND,RUN IS ACCESD NOT AT PRECOMP",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Depends on SQL statement used by program",
+    "option_4": "Depends on COBOL statement used by program",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 108,
+    "topic": "DB2",
+    "question": "ACCESS TO DB2 TABLE CAN BE CONTROLLED BY",
+    "option_1": "BIND",
+    "option_2": "RUN",
+    "option_3": "PRECOMPILE 16.WHICH ISOLATION READ ROWS AND HOLDS LOCKS UNTIL COMMIT/ROLLBACK AND DOES NOT ALLOW INSERT/UPDATE IN RESULT SET",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 109,
+    "topic": "DB2",
+    "question": "DB2 is not accessed during precompilation process",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Depends on SQL statement used by program",
+    "option_4": "Depends on COBOL statement used by program",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 110,
+    "topic": "DB2",
+    "question": "MEMLIMIT ALLOWS ONE TO CLAIM MEMORY BEYOND ______ VALUE",
+    "option_1": "2M",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 111,
+    "topic": "DB2",
+    "question": "NAME ALL THE POSSIBLE VALUES OF RECFM ( 5 values) 9.TIME parameter is used for specifying ___C__.",
+    "option_1": "time taken by the job.",
+    "option_2": "Time JES will take to complete execution.",
+    "option_3": "maximum time to be allocated for the job.",
+    "option_4": "time when the job will run on the scheduled date",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 112,
+    "topic": "DB2",
+    "question": "NOTIFY=____C__ is used for notifying current user or job owner.",
+    "option_1": "exact user ID only needed",
+    "option_2": "SYSUID",
+    "option_3": "&SYSUID",
+    "option_4": "&SYSUSR",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 113,
+    "topic": "DB2",
+    "question": "TO CREATE A TABLE, WHAT DOES THE IN CLAUSE DEFINE?",
+    "option_1": "IN DATABASE.TABLESPACE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 114,
+    "topic": "DB2",
+    "question": "USER IS UPDATING WITH CS ISOLATION,ANOTHER USER SEES THE UPDATED VALUE. WHICH ISOLATION IS USED BY THE OTHER USER",
+    "option_1": "UR",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 115,
+    "topic": "DB2",
+    "question": "Indicator variables are used in a COBOL program",
+    "option_1": "to indicate a null value",
+    "option_2": "to indicate a primary key",
+    "option_3": "to indicate a binary object",
+    "option_4": "to indicate whether a cursor is open or closed",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_3",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 116,
+    "topic": "DB2",
+    "question": "A binary full word occupies ________ bytes of memory",
+    "option_1": "8",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 117,
+    "topic": "DB2",
+    "question": "CONTINUED VALUE OF PARM MUST START FROM COLUMN ___",
+    "option_1": "16",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 118,
+    "topic": "DB2",
+    "question": "Dataset qualifier length is of _C___.",
+    "option_1": "4",
+    "option_2": "6",
+    "option_3": "8",
+    "option_4": "12",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 119,
+    "topic": "DB2",
+    "question": "IMPLICIT BIND TAKES PLACE AT ___ TIME",
+    "option_1": "BIND B. RUN C. PRECOMPILE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 120,
+    "topic": "DB2",
+    "question": "CREATE TABLE EMP (EMPID INTEGER NOT NULL, ENAME VARCHAR(20) NOT NULL WITH DEFAULT 'UNKNOWN', DEPTID CHAR(10))",
+    "option_1": "ENAME COLUMN WILL ALWAYS CONTAIN 'UNKNOWN'",
+    "option_2": "ENAME COLUMN WILL DEFAULT TO 'UNKNOWN' IF NOT PROVIDED",
+    "option_3": "ENAME COLUMN WILL NEVER CONTAIN 'UNKNOWN'",
+    "option_4": "NONE OF ABOVE ARE CORRECT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 121,
+    "topic": "DB2",
+    "question": "WHO IS OWNER OF A TABLE",
+    "option_1": "ID THAT CREATES TABLE.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 122,
+    "topic": "DB2",
+    "question": "PARENT CAN HAVE ANY NUMBER OF DEPENDENTS (T/F)",
+    "option_1": "True",
+    "option_2": "False",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 123,
+    "topic": "DB2",
+    "question": "Which of the following is done by PRECOMPILER?",
+    "option_1": "Syntax check the SQL",
+    "option_2": "Adds the consistency token to each CALL and SQ L statement",
+    "option_3": "Creates the DBRM",
+    "option_4": "All of the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_3",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 124,
+    "topic": "DB2",
+    "question": "VALUES FOR PROGRAMMER NAME CAN BE ENCLOSED EITHER IN ___ OR ___",
+    "option_1": "' ' or {}",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 125,
+    "topic": "DB2",
+    "question": "Job name can be of length __B__.",
+    "option_1": "12",
+    "option_2": "8",
+    "option_3": "6",
+    "option_4": "4",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 126,
+    "topic": "DB2",
+    "question": "WHICH ISOLATION READ ROWS AND HOLDS LOCKS UNTIL COMMIT/ROLLBACK AND DOES NOT ALLOW INSERT/UPDATE IN RESULT SET",
+    "option_1": "RR",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 127,
+    "topic": "DB2",
+    "question": "DEPENDENT AND PARENT CAN BE SAME TABLE (T/F)",
+    "option_1": "True",
+    "option_2": "False",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 128,
+    "topic": "DB2",
+    "question": "The ________________ utility is used to accomplish bulk inserts into DB2 tables.",
+    "option_1": ".LOAD",
+    "option_2": ".COPY",
+    "option_3": ".REPRO",
+    "option_4": ".INSERT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 129,
+    "topic": "DB2",
+    "question": "SELECT * FROM EMP WHERE EMPCODE = \u2018999\u2019; Assume a table EMP with a column EMPCODE(char, 3 bytes), and no row with EMPCODE = \u2018999\u2019 When the above SQL query is executed in SPUFI, what will be the return code?",
+    "option_1": "0",
+    "option_2": "+100",
+    "option_3": "-100",
+    "option_4": "-305",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 130,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE IF I AM SEARCHING FOR EID=009 AN D IT DOES NOT EXIST.",
+    "option_1": "SQLCODE = 100.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 131,
+    "topic": "DB2",
+    "question": "For ________Read statement sets the file position indicator pointer to the record whose relative record number is contained in the RELATIVE KEY data item and makes the record available",
+    "option_1": "Relative Files.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 132,
+    "topic": "DB2",
+    "question": "IF A STEP IS ABENDED IN A MULTI STEP JCL, WHAT WILL HAPPEN TO SUBSEQUENT STEPS",
+    "option_1": "bypassed",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 133,
+    "topic": "DB2",
+    "question": "Job step name can be of length B____.",
+    "option_1": "12",
+    "option_2": "8",
+    "option_3": "6",
+    "option_4": "4",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 134,
+    "topic": "DB2",
+    "question": "A COLUMN WITH VARCHAR(20) NOT NULL WITH DEFAULT 'HI' IS DEFINED. WHAT VALUE IS STORED IF A VALUE IS NOT GIVE IN THE INSERT QUERY",
+    "option_1": "HI",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 135,
+    "topic": "DB2",
+    "question": "Given a table that has columns defined: COL1 SMALLINT NOT NULL COL2 VARCHAR(20) Which of the following statements is used to retrie ve rows from the table using a cursor and allows th e second column to be checked for NULL values?",
+    "option_1": "FETCH * INTO :WS-COL1, : WS-COL2",
+    "option_2": "FETCH CURSOR1 INTO : WS-COL1, : WS-COL2",
+    "option_3": "FETCH * INTO : WS-COL1, : WS-COL2 : WS-COL2-IND",
+    "option_4": "FETCH CURSOR1 INTO : WS-COL1, : WS-COL2 : WS-COL 2-IND",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 136,
+    "topic": "DB2",
+    "question": "How many rows can be retrieved using a SELECT INTO statement in an application?",
+    "option_1": "none",
+    "option_2": "1",
+    "option_3": "2",
+    "option_4": "unlimited",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 137,
+    "topic": "DB2",
+    "question": "What does the acronym SQL stand for?",
+    "option_1": "Structured Question Language",
+    "option_2": "Structured Quotient Language",
+    "option_3": "Structured Query Language",
+    "option_4": "Standard Queuing List",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_2",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 138,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE - 818",
+    "option_1": "TIMESTAMP MISMATCH",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 139,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE",
+    "option_1": "818",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 140,
+    "topic": "DB2",
+    "question": "DD name in the job step can be of length __B__.",
+    "option_1": "12",
+    "option_2": "8",
+    "option_3": "6",
+    "option_4": "4",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 141,
+    "topic": "DB2",
+    "question": "EXPLAIN CAN BE DONE AT WHAT TIME? PC,BIND,RUN,NONE OF THESE TIMES",
+    "option_1": "BIND",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 142,
+    "topic": "DB2",
+    "question": "The following CREATE TABLE statement was used to create a table named TABLE1 : CREATE TABLE TABLE1 (COL1 INTEGER) Which of the following statements can be used to re move all records stored in table TABLE1?",
+    "option_1": "DELETE FROM TABLE1",
+    "option_2": "DROP * FROM TABLE1",
+    "option_3": "REMOVE ALL FROM TABLE1",
+    "option_4": "UPDATE TABLE1 SET col1 = NULL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 143,
+    "topic": "DB2",
+    "question": "A collection is a group of",
+    "option_1": "Plans",
+    "option_2": "DBRMs",
+    "option_3": "Packages",
+    "option_4": "None of the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_3",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 144,
+    "topic": "DB2",
+    "question": "DEFINE  RS ISOLATION",
+    "option_1": "LOCK IS RELEASED AFTER COMMIT, INSERT IS ALLOWED.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 145,
+    "topic": "DB2",
+    "question": "TYPERUN value can be ____________",
+    "option_1": "TYPERUN=HOLD,TYPERUN=SCAN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 146,
+    "topic": "DB2",
+    "question": "List out the \u201cPotential Designer\u201d tasks? ? <",
+    "option_1": "What\u2019s missing here ?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 147,
+    "topic": "DB2",
+    "question": "PARM passed using EXEC statement can be of length __C__.",
+    "option_1": "32",
+    "option_2": "64",
+    "option_3": "100",
+    "option_4": "128",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 148,
+    "topic": "DB2",
+    "question": "LOCKS ARE HELD UNTIL COMMIT FOR WHICH ISOLATION.",
+    "option_1": "RR,RS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 149,
+    "topic": "DB2",
+    "question": "Which is the correct SQL?",
+    "option_1": "Select Sales-id, salary+commission as \u2018Compensat ion\u2019order by Compensation",
+    "option_2": "Select Sales-id, salary+commission as Compensati on order by",
+    "option_3": "Select Sales-id, salary+commission as \u2018Compensat ion\u2019order by 2",
+    "option_4": "Select Sales-id, salary+commission as Compensati on order by 2",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 150,
+    "topic": "DB2",
+    "question": "What is an RDBMS?",
+    "option_1": "A database that stores data in a table format",
+    "option_2": "A database that is not concurrent",
+    "option_3": "A database that always has the same columns an d rows of data",
+    "option_4": "A database that does not support Lock and Load",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 151,
+    "topic": "DB2",
+    "question": "TO MODIFY EXISTING PLAN WHICH PRIVILEGE IS NEED ED ?",
+    "option_1": "EXECUTE PRIVELEGE",
+    "option_2": "BIND",
+    "option_3": "CHANGE THE PACKAGE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 152,
+    "topic": "DB2",
+    "question": "JCL coding starts from position _B_.",
+    "option_1": "0",
+    "option_2": "1",
+    "option_3": "7",
+    "option_4": "8",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 153,
+    "topic": "DB2",
+    "question": "INFORMATION OF ACCESS PATH IS GOT BY THE ___ QUERY",
+    "option_1": "EXPLAIN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 154,
+    "topic": "DB2",
+    "question": "A package must be bound into a plan before it i s usable",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Depends on Application logic",
+    "option_4": "A package can't be bound to a plan",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 155,
+    "topic": "DB2",
+    "question": "OPERATORS USED BY 'LIKE' ARE ?",
+    "option_1": "%,_",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 156,
+    "topic": "DB2",
+    "question": "__________ statement removes the record from an indexed or relative file and the files must be opened in I-O m ode.",
+    "option_1": "DELETE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 157,
+    "topic": "DB2",
+    "question": "A package must be bound into a plan before it is usable",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Depends on Application logic",
+    "option_4": "A package can't be bound to a plan",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 158,
+    "topic": "DB2",
+    "question": "JCL coding starts with _b___.",
+    "option_1": "blank space",
+    "option_2": "//",
+    "option_3": "//*",
+    "option_4": "any valid syntax",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 159,
+    "topic": "DB2",
+    "question": "A TABLE CONTAINS A LIST OF ALL SEATS AVAILABLE AT A FOOTBALL STADIUM. A SEAT CONSISTS OF SECTION NO. , SEAT NO., AND WHETHER THE SEAT IS ASSIGNED OR NOT. A TICKET AGENT GENERATES A LIST OF ALL UNASSIGNED SEATS. WHEN THE AGENT REFRESHES THE LIST, IT SHOULD ONLY CHANGE IF ANOTHER AGENT ASSIGNS ONE OR MORE UNASSIGNED SEATS. WHICH IS BEST ISOLATION TO USE",
+    "option_1": "CS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 160,
+    "topic": "DB2",
+    "question": "Application programmer can not change the CURREN T USER special register value",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 161,
+    "topic": "DB2",
+    "question": "EXEC SQL SELECT EMPNAME INTO :H-EMPNAME FROM EM P END-EXEC. Assume a table EMP, having a column EMPNAME and cor responding host variable H-EMPNAME defined in the cobol program. If there are 3 rows in the table, what will happen when the query gets executed in the program?",
+    "option_1": "H-EMPNAME will store the name from the 3rd row",
+    "option_2": "H-EMPNAME will store the name from the 1st row",
+    "option_3": "H-EMPNAME can store the name from any of the 3 rows randomly because the order of retrieval is not guaranteed in a SELECT SQL",
+    "option_4": "The query will return a non-zero SQLCODE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 162,
+    "topic": "DB2",
+    "question": "EXEC SQL SELECT EMPNAME INTO :H-EMPNAME FROM EMP END-EXEC. Assume a table EMP, having a column EMPNAME and corresponding host variable H-EMPNAME defined in the cobol program. If there are 3 rows in the table, what will happen when the query gets executed in the program?",
+    "option_1": "H-EMPNAME will store the name from the 3rd row",
+    "option_2": "H-EMPNAME will store the name from the 1st row",
+    "option_3": "H-EMPNAME can store the name from any of the 3 rows randomly because the order of retrieval is not guaranteed in a SELECT SQL",
+    "option_4": "The query will return a non-zero SQLCODE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 163,
+    "topic": "DB2",
+    "question": "__job___ MUST BE FIRST STATEMENT IN JCL DAY",
+    "option_1": "2 JCL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 164,
+    "topic": "DB2",
+    "question": "comment line is coded as: ans:c",
+    "option_1": "//COMMENT",
+    "option_2": "//",
+    "option_3": "//*",
+    "option_4": "//* (7 column blank at first)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 165,
+    "topic": "DB2",
+    "question": "At a conceptual level, an \"entity\" on a logical model will often map to which DB2 object?",
+    "option_1": "Index",
+    "option_2": "Table",
+    "option_3": "Column",
+    "option_4": "Database",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 166,
+    "topic": "DB2",
+    "question": "AUTOMATIC ENFORCEMENT OF REFERENTIAL CONSTRAIN I S CALLED ___",
+    "option_1": "REFERENTIAL INTEGRITY",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 167,
+    "topic": "DB2",
+    "question": "Primary key is present in _______",
+    "option_1": "KSDS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 168,
+    "topic": "DB2",
+    "question": "For comment line coding // is compulsory and * should be at __a position.",
+    "option_1": "True and 3rd",
+    "option_2": "False and 8th position",
+    "option_3": "True and 8th position",
+    "option_4": "false and 3rd",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 169,
+    "topic": "DB2",
+    "question": "AUTOMATIC ENFORCEMENT OF REFERENTIAL CONSTRAIN IS CALLED __REFERENTIAL INTEGRITY__ 24.AUTHORITY CHECK IS DONE AT ____ TIME FOR DYNAMIC SQL PC, BIND , RUN",
+    "option_1": "RUN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 170,
+    "topic": "DB2",
+    "question": "The language used to 'talk' to a relational data base manager (RDBM) is ________.",
+    "option_1": "Structured Query Language",
+    "option_2": "COBOL",
+    "option_3": "DB2",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 171,
+    "topic": "DB2",
+    "question": "What does the isolation level - Cursor Stabilit y do?",
+    "option_1": "Hold lock on row until next read",
+    "option_2": "Lock rows read until commit",
+    "option_3": "Lock qualifying rows until commit",
+    "option_4": "No READ lock",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 172,
+    "topic": "DB2",
+    "question": "What does the isolation level - Cursor Stability do?",
+    "option_1": "Hold lock on row until next read",
+    "option_2": "Lock rows read until commit",
+    "option_3": "Lock qualifying rows until commit",
+    "option_4": "No READ lo ck",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 173,
+    "topic": "DB2",
+    "question": "Find the true statement for //STP2 EXEC PGM=BAKER,TIME=(,20).",
+    "option_1": "time allocated ofr step is 20 min.",
+    "option_2": "time required for the step is 20 second.",
+    "option_3": "maximum time allocated for the step is 20 second.",
+    "option_4": "job will not abend even if execution time for the step is 20 second.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 174,
+    "topic": "DB2",
+    "question": "DB2 UDB is a ____________ Database Management Sy stem.",
+    "option_1": "Network",
+    "option_2": "Hierarchical",
+    "option_3": "Relational",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 175,
+    "topic": "DB2",
+    "question": "During the bind process DB2",
+    "option_1": "Checks security.",
+    "option_2": "Compares column and table names against DB2 cat alog.",
+    "option_3": "Builds access path strategy for each SQL state ment.",
+    "option_4": "All of the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_2",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 176,
+    "topic": "DB2",
+    "question": "WHICH OF THE FOLLOWING IS USED TO APPLY CONDITI ON ON GROUP?",
+    "option_1": "SET",
+    "option_2": "WHERE",
+    "option_3": "HAVING",
+    "option_4": "ORDER 34 DYNAMIC SQL CANNOT CONTAIN HOST VARIABLES? (T/F)  - T 35.AUTOMATIC ENFORCEMENT OF REFERENCIAL CONSTRAIN I S _______",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 177,
+    "topic": "DB2",
+    "question": "JCL coding starts from________",
+    "option_1": "Position1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 178,
+    "topic": "DB2",
+    "question": "Find the true statement for //STP2 EXEC PGM=BAKER,TIME=1.",
+    "option_1": "time allocated for step is 1 minute minimum.",
+    "option_2": "time required for the step is 1 second.",
+    "option_3": "job will abend if step execution time take more than 1 minute.",
+    "option_4": "job will not abend even if execution time for the step is 1 second.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 179,
+    "topic": "DB2",
+    "question": "Identify which one is NOT the correct table name .",
+    "option_1": "$Table11",
+    "option_2": "#Table1",
+    "option_3": "Table 1",
+    "option_4": "Table_1",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 180,
+    "topic": "DB2",
+    "question": "During a BIND process, DB2 checks existence of necessary DB2 objects,like Tables, Views.",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on SQL code used by program",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 181,
+    "topic": "DB2",
+    "question": "The _________________________ is responsible for building and maintaining the application",
+    "option_1": "related (as contrasted with system-level) DB2 objects within the database.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 182,
+    "topic": "DB2",
+    "question": "to start a job from 3rd step, syntax used is _______.",
+    "option_1": "START",
+    "option_2": "STEP=3",
+    "option_3": "RESTART",
+    "option_4": "GO TO STEP3",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 183,
+    "topic": "DB2",
+    "question": "Which one of the following can be used as a char acter data type?",
+    "option_1": "DATE",
+    "option_2": "TIMESTAMP",
+    "option_3": "LONG",
+    "option_4": "LONG VARCHAR",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 184,
+    "topic": "DB2",
+    "question": "Where is the isolation level specified?",
+    "option_1": "On precompile step",
+    "option_2": "On Compile step",
+    "option_3": "On BIND",
+    "option_4": "Any of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 185,
+    "topic": "DB2",
+    "question": "For maximum limit of memory syntax is__________",
+    "option_1": "MEMLIMIT=NOLIMIT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 186,
+    "topic": "DB2",
+    "question": "JCL coding starts from position ____.",
+    "option_1": "0",
+    "option_2": "1",
+    "option_3": "7",
+    "option_4": "8",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 187,
+    "topic": "DB2",
+    "question": "A table may have more than one unique key.",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "All of the above",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 188,
+    "topic": "DB2",
+    "question": "One DBRM corresponds to exactly one source modu le",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on compiler option",
+    "option_4": "None of the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 189,
+    "topic": "DB2",
+    "question": "One DBRM corresponds to exactly one source module",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on compiler option",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 190,
+    "topic": "DB2",
+    "question": "JCL coding starts with ____.",
+    "option_1": "blank space",
+    "option_2": "//",
+    "option_3": "//*",
+    "option_4": "any valid syntax",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 191,
+    "topic": "DB2",
+    "question": "SINGLE DBRM CREATES A PACKAGE (T/F)",
+    "option_1": "True",
+    "option_2": "False",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 192,
+    "topic": "DB2",
+    "question": "What is 'LIKE' used for in WHERE clause?",
+    "option_1": "To get likely values",
+    "option_2": "To get min and max values",
+    "option_3": "To get all values using a part of the value in t he condition.",
+    "option_4": "Used to sort the values.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 193,
+    "topic": "DB2",
+    "question": "For SQL Data Type DECIMAL, the COBOL Data Type will be",
+    "option_1": "S9(9) COMP-1",
+    "option_2": "S9(9) COMP-2",
+    "option_3": "S9(9) COMP-3",
+    "option_4": "S9(9) COMP-4",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 194,
+    "topic": "DB2",
+    "question": "DB2 CANNOT BE ACCESSED DURING PC TIME (T/F)",
+    "option_1": "True",
+    "option_2": "False",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 195,
+    "topic": "DB2",
+    "question": "When we use________the search index need not be intialised SET statement?",
+    "option_1": "SEARCH ALL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 196,
+    "topic": "DB2",
+    "question": "The _______________is usually responsible for the running of most DB2 utilities for purpo ses of backup and recovery, re",
+    "option_1": "organizing data, keeping statistics current, etc.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 197,
+    "topic": "DB2",
+    "question": "comment line is coded as:",
+    "option_1": "//COMMENT",
+    "option_2": "//",
+    "option_3": "//*",
+    "option_4": "//* (7 column blank at first)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 198,
+    "topic": "DB2",
+    "question": "How do you find the least value in a column in d b2C SELECT BIG(...)from Table Name",
+    "option_1": "CLOB",
+    "option_2": "BLOB",
+    "option_3": "DBCLOB",
+    "option_4": "All of Above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 199,
+    "topic": "DB2",
+    "question": "Consider the following column definitions: ... AMOUNT1 DECIMAL(9,2) DEFAULT 500.00, AMOUNT2 DECIMAL(9,2) NOT NULL WITH DEFAULT, ... If a row is inserted without specifying AMOUNT2, the value stored for AMOUNT2 will be",
+    "option_1": "500",
+    "option_2": "0",
+    "option_3": "NULL",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 200,
+    "topic": "DB2",
+    "question": "STATE THE EXTERNAL AND INTERNAL STORAGE BYTES FO R DATE, TIME, TIMESTAMP",
+    "option_1": "EXTERNAL - 10, 8, 26",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 201,
+    "topic": "DB2",
+    "question": "For comment line coding // is compulsory and * should be at __ position.",
+    "option_1": "True and 3rd",
+    "option_2": "False and 8th position",
+    "option_3": "True and 8th position",
+    "option_4": "false and 3rd",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 202,
+    "topic": "DB2",
+    "question": "STATE THE EXTERNAL AND INTERNAL STORAGE BYTES FOR DATE, TIME, TIMESTAMP",
+    "option_1": "10 8 26 - EXTERNAL  INTERNAL- 4 3 10",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 203,
+    "topic": "DB2",
+    "question": "Columns used in the GROUP BY clause must also b e specified in the SELECT clause.",
+    "option_1": "true",
+    "option_2": "false",
+    "option_3": "cant say",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 204,
+    "topic": "DB2",
+    "question": "_______ fields cannot be used in MULTIPLY though they are numeric when giving is not provided",
+    "option_1": "Numeric edited",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 205,
+    "topic": "DB2",
+    "question": "Columns used in the GROUP BY clause must also be specified in the SELECT clause.",
+    "option_1": "true",
+    "option_2": "false",
+    "option_3": "cant say",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 206,
+    "topic": "DB2",
+    "question": "Find the true statement for //STP2 EXEC PGM=BAKER,TIME=(,20).",
+    "option_1": "time allocated ofr step is 20 min.",
+    "option_2": "time required for the step is 20 second.",
+    "option_3": "maximum time allocated for the step is 20 second.",
+    "option_4": "job will not abend even if execution time for the step is 20 second.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 207,
+    "topic": "DB2",
+    "question": "If a column contains NULL value, Indicator Vari able is set to",
+    "option_1": "NEGATIVE",
+    "option_2": "POSITIVE",
+    "option_3": "NULL",
+    "option_4": "SPACES",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 208,
+    "topic": "DB2",
+    "question": "If a column contains NULL value, Indicator Variable is set to",
+    "option_1": "NEGATIVE",
+    "option_2": "POSITIVE",
+    "option_3": "NULL",
+    "option_4": "SPACES",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 209,
+    "topic": "DB2",
+    "question": "Find the true statement for //STP2 EXEC PGM=BAKER,TIME=1.",
+    "option_1": "time allocated for step is 1 minute minimum.",
+    "option_2": "time required for the step is 1 second.",
+    "option_3": "job will abend if step execution time take more than 1 minute.",
+    "option_4": "job will not abend even if execution time for the step is 1 second.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 210,
+    "topic": "DB2",
+    "question": "OWNER(PROD) QUALIFIER(XYZ) SIMPLE NAME OF TABLE IS EMP. WHAT IS TABLE NAME ?",
+    "option_1": "XYZ.EMP",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 211,
+    "topic": "DB2",
+    "question": "Which of the following is True about NULL value s?",
+    "option_1": "If DB2 finds a negative value in the indicator , the column is set to null",
+    "option_2": "If DB2 finds a negative value in the indicator , the value in the host variable is ignored",
+    "option_3": "If DB2 finds a positive value in the indicator, the column is set to corresponding host variable",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 212,
+    "topic": "DB2",
+    "question": "ALTER TABLE DEPT (ADD PRIMARY KEY (A), FORIEGN KEY(B) REFERENCES EMP(C)) WHICH IS PARENT AND CHILD TABLE",
+    "option_1": "EMP -PARENT , DEPT - CHILD",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 213,
+    "topic": "DB2",
+    "question": "ACCESS MODE IS RANDOM can be specified for _____",
+    "option_1": "INDEXED and RELATIVE files",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 214,
+    "topic": "DB2",
+    "question": "Which of the following is True about NULL values?",
+    "option_1": "If DB2 finds a negative value in the indicator, the column is set to null",
+    "option_2": "If DB2 finds a negative value in the indicator, the value in the host variable is ignored",
+    "option_3": "If DB2 finds a positive value in the indicator, the column is set to corresponding host variable",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 215,
+    "topic": "DB2",
+    "question": "Which of the following would you use to store m usic?",
+    "option_1": "DBCLOBs",
+    "option_2": "CLOBs",
+    "option_3": "MCLOBs",
+    "option_4": "BLOBs",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 216,
+    "topic": "DB2",
+    "question": "The ____________________________ allows end",
+    "option_1": "users to display thenames and contents of data, storage, and management classes.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 217,
+    "topic": "DB2",
+    "question": "___________________will prepare (pre",
+    "option_1": "compile and bind) their programs for execution i n the test environment.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 218,
+    "topic": "DB2",
+    "question": "Which of the following would you use to store music?",
+    "option_1": "DBCLOBs",
+    "option_2": "CLOBs",
+    "option_3": "MCLOBs",
+    "option_4": "BLOBs",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 219,
+    "topic": "DB2",
+    "question": "EMP1 TABLE IS PARENT AND EMP2 IS CHILD. WHO WILL CONTAIN THE FK",
+    "option_1": "SELECT, INSERT , UPDATE",
+    "option_2": "SELECT",
+    "option_3": "SELECT, INSERT, UPDATE, DELETE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 220,
+    "topic": "DB2",
+    "question": "DB2 provides the followings levels of locking",
+    "option_1": "Row and Page level locking",
+    "option_2": "Row, Page and Table level locking",
+    "option_3": "Row, Page and Tablespace level locking",
+    "option_4": "Row, Page, Table and Tablespace level locking",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_2",
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 221,
+    "topic": "DB2",
+    "question": "WHICH QUERIES CAN USE INDICATOR VARIABLES",
+    "option_1": "SELECT, INSERT , UPDATE",
+    "option_2": "SELECT",
+    "option_3": "SELECT, INSERT, UPDATE, DELETE 36.WHICH FUNCTION IN DB2 REMOVES DUPLICATES",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 222,
+    "topic": "DB2",
+    "question": "IF REDEFINES specified it must follow ________",
+    "option_1": "a dataname",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 223,
+    "topic": "DB2",
+    "question": "Which of the following is not a valid Lock mode ?",
+    "option_1": "S - Share",
+    "option_2": "U - Update",
+    "option_3": "SI - Share Intent",
+    "option_4": "all above are valid lock modes",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_2",
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 224,
+    "topic": "DB2",
+    "question": "WHICH FUNCTION IN DB2 REMOVES DUPLICATES",
+    "option_1": "ONLY SENDING",
+    "option_2": "ONLY RECEIVING",
+    "option_3": "BOTH",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 225,
+    "topic": "DB2",
+    "question": "What must be true of a Unique key?",
+    "option_1": "There can be only one per table.",
+    "option_2": "It can consist of one or several columns that make up a unique identifier.",
+    "option_3": "It can contain only one column that uniquely i dentifies an entity.",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 226,
+    "topic": "DB2",
+    "question": "HOST VARIABLES CAN BE USED FOR ___ VARIABLES IN DB2 PROGRAMS",
+    "option_1": "ONLY SENDING",
+    "option_2": "ONLY RECEIVING",
+    "option_3": "BOTH 38.CURSORS DECLARED WITH WITH HOLD OPTION DOES NOT CLOSE CURSOR AT ______ TIME",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 227,
+    "topic": "DB2",
+    "question": "OBJECT MODULE IS CREATED BY LINK-EDIT , PC , COMPILER , TRANSLATOR 42.WHICH LOCK IS USED IF EVERY ROW IN TABLE IS TO B E UPDATED",
+    "option_1": "TABLE LEVEL",
+    "option_2": "ROW LEVEL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 228,
+    "topic": "DB2",
+    "question": "_________ statement halts the execution of the program and returns the control of the system.",
+    "option_1": "STOP RUN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 229,
+    "topic": "DB2",
+    "question": "What is true about Packages?",
+    "option_1": "They contain executable forms of SQL statement s",
+    "option_2": "Packages are stored in the DB2 catalog(STORED IN DIRECTORY)",
+    "option_3": "packages contain the DB2 access plan",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 230,
+    "topic": "DB2",
+    "question": "CURSORS DECLARED WITH WITH HOLD OPTION DOES NOT CLOSE CURSOR AT COMMIT___ TIME 39.REBIND PACKAGE IS DONE AT __BIND__ TIME PC, BIND , RUN 40.DEFAULT LOCKSIZE IN ZOS IS _PAGE___ AND FOR WORKSTATION IS _ROW__ 41.ZOS SUPPORTS WHICH LOCKING?",
+    "option_1": "PAGE,TABLE,row,tablespace",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 231,
+    "topic": "DB2",
+    "question": "Which of the following is correct about DBRM?",
+    "option_1": "DBRM contains program's source SQL statements",
+    "option_2": "DBRM becomes input to BIND",
+    "option_3": "DBRM is stored as a member in a PDS",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 232,
+    "topic": "DB2",
+    "question": "REBIND PACKAGE IS DONE AT ____ TIME PC, BIND , RUN 40.DEFAULT LOCKSIZE IN ZOS IS ____ AND FOR WORKSTAT ION IS ___",
+    "option_1": "PAGE, ROW",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 233,
+    "topic": "DB2",
+    "question": "__________ statement causes recursion",
+    "option_1": "COPY",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 234,
+    "topic": "DB2",
+    "question": "You want a cursor to be defined so that it rema ins open even after a commit operation.How can this be achieved?",
+    "option_1": "Declare the cursor with WITH HOLD option",
+    "option_2": "Declare the cursor with WITH NO CLOSE option",
+    "option_3": "Declare the cursor with PERMANENT OPEN option",
+    "option_4": "Declare the cursor with WITH NOHOLD option",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 235,
+    "topic": "DB2",
+    "question": "_____________provides one or more special",
+    "option_1": "purpose sections that are executed when an exceptional condition occurs.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 236,
+    "topic": "DB2",
+    "question": "You want a cursor to be defined so that it remains open even after a commit operation.How can this be achieved?",
+    "option_1": "Declare the cursor with WITH HOLD option",
+    "option_2": "Declare the cursor with WITH NO CLOSE option",
+    "option_3": "Declare the cursor with PERMANENT OPEN option",
+    "option_4": "Declare the cursor with WITH NOHOLD option",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 237,
+    "topic": "DB2",
+    "question": "SELECT * FROM EMP WHERE EMPCODE like \u2018%9 \u2019; Assume a table EMP with 2 columns \u2013 SALARY(numeric, 4 bytes, not null) and EMPCODE(numeric, 3 bytes, not null). If there are 10 rows in the table what will be resu lt of the execution of above query?",
+    "option_1": "Rows with EMPCODEs having 9 as the first byte will be retrieved.",
+    "option_2": "Rows with EMPCODEs having 9 as the last byte w ill be retrieved.",
+    "option_3": "All the 10 rows will be retrieved",
+    "option_4": "The query would return a non-zero return SQLCO DE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 238,
+    "topic": "DB2",
+    "question": "SELECT * FROM EMP WHERE EMPCODE like \u2018%9\u2019; Assume a table EMP with 2 columns \u2013 SALARY(numeric, 4 bytes, not null) and EMPCODE(numeric, 3 bytes, not null). If there are 10 rows in the table what will be result of the execution of above query?",
+    "option_1": "Rows with EMPCODEs having 9 as the first byte will be retrieved.",
+    "option_2": "Rows with EMPCODEs having 9 as the last byte will be retrieved.",
+    "option_3": "All the 10 rows will be retrieved",
+    "option_4": "The query would return a non-zero return SQLCODE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 239,
+    "topic": "DB2",
+    "question": "For SQL Data Type TIMESTAMP , the COBOL Data Ty pe will be",
+    "option_1": "X(8)",
+    "option_2": "X(16)",
+    "option_3": "X(26)",
+    "option_4": "X(32)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 240,
+    "topic": "DB2",
+    "question": "For SQL Data Type TIMESTAMP , the COBOL Data Type will be",
+    "option_1": "X(8)",
+    "option_2": "X(16)",
+    "option_3": "X(26)",
+    "option_4": "X(32)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 241,
+    "topic": "DB2",
+    "question": "On z/OS, the precompiler doesn't access DB2 dur ing its processing:",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on program code",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 242,
+    "topic": "DB2",
+    "question": "EXEC SQL SELECT EMPNAME INTO :H-EMPNAME FROM EMP END-EXEC IN DB2 APPLICATION WILL RETURN",
+    "option_1": "NON ZERO SQL CODE",
+    "option_2": "ZERO SQL CODE",
+    "option_3": "SYNTAX ERROR",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 243,
+    "topic": "DB2",
+    "question": "UNCOMMITTED READ HOLDS LOCK UNTIL ?",
+    "option_1": "NEXT READ",
+    "option_2": "UNTIL COMMIT           (REPEATED)",
+    "option_3": "THERE IS NO LOCK",
+    "option_4": "NONE OF ABOVE 44.WHAT IS RIGHT OUTER JOIN?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 244,
+    "topic": "DB2",
+    "question": "On z/OS, the precompiler doesn't access DB2 during its processing:",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on program code",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 245,
+    "topic": "DB2",
+    "question": "Which is not a valid Page-level lock?",
+    "option_1": "S",
+    "option_2": "U",
+    "option_3": "X",
+    "option_4": "IX",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 246,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE 100? NO ROW FOUND 45.WHAT IS SQLCODE -818?",
+    "option_1": "timestamp mismatch",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 247,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE 100? NO ROW FOUND 45.WHAT IS SQLCODE",
+    "option_1": "818?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 248,
+    "topic": "DB2",
+    "question": "When a cursor is declared as scrollable, you ca n use FETCH statements to:",
+    "option_1": "Jump around and directly retrieve a row within result table",
+    "option_2": "Scroll backwards as well as forwards",
+    "option_3": "Both A and B",
+    "option_4": "Only B",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 249,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE -818?",
+    "option_1": "TIMESTAMP MISMATCH",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 250,
+    "topic": "DB2",
+    "question": "WHAT IS SQLCODE",
+    "option_1": "818?",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 251,
+    "topic": "DB2",
+    "question": "GENERALLY ACCESS TO BIND PROD PACKAGES AND PLANS  ARE DONE BY ____",
+    "option_1": "DBA",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 252,
+    "topic": "DB2",
+    "question": "When a cursor is declared as scrollable, you can use FETCH statements to:",
+    "option_1": "Jump around and directly retrieve a row within result table",
+    "option_2": "Scroll backwards as well as forwards",
+    "option_3": "Both A and B",
+    "option_4": "Only B",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 253,
+    "topic": "DB2",
+    "question": "Identify the wrong statement:",
+    "option_1": "DCLGEN can be used only on existing tables",
+    "option_2": "DCLGEN can be used on existing or non existing tables",
+    "option_3": "DB2 must be active before DCLGEN can be used",
+    "option_4": "SQL INCLUDE statement is used for using DCLGEN output",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 254,
+    "topic": "DB2",
+    "question": "WHAT IS ANOTHER NAME FOR TIMESTAMP CHECK",
+    "option_1": "CONSISTENCY TOKEN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 255,
+    "topic": "DB2",
+    "question": "____ IS THE MEANS BY WHICH THE SQL IS EXECUTED WHEN APPLICATION PGM IS RUN",
+    "option_1": "PACKAGE",
+    "option_2": "PLAN.",
+    "option_3": "BOTH",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 256,
+    "topic": "DB2",
+    "question": "A cursor declared with option WITH HOLD will be held until",
+    "option_1": "CONNECT(type- 1)",
+    "option_2": "ROLLBACK",
+    "option_3": "Close cursor statement",
+    "option_4": "All the above",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_1",
+      "option_3",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 257,
+    "topic": "DB2",
+    "question": "Two programmers coded SQL as follows. P1: EXEC SQL INSERT INTO DB2D.TABLE1 VALUES(:VAR1, :VAR2, DEFAUL T) END-EXEC. P2: EXEC SQL INSERT INTO DB2D.TABLE1 VALUES(:VAR1, :VAR2, DEFAUL T) END-EXEC.",
+    "option_1": "P1 is correct and P2 is incorrect",
+    "option_2": "P1 is incorrect and P2 is correct",
+    "option_3": "Both P1 and P2 are correct",
+    "option_4": "Both P1 and P2 are incorrect",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 258,
+    "topic": "DB2",
+    "question": "UNIT OF RECOVERY IS DONE BY",
+    "option_1": "DBA",
+    "option_2": "SYSADM",
+    "option_3": "PROGRAMMER",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 259,
+    "topic": "DB2",
+    "question": "______________ can store large amounts of double",
+    "option_1": "byte character data (usually text i n an Oriental language).",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 260,
+    "topic": "DB2",
+    "question": "Consider the following Cursor definition. DECLARE CUR1 SENSITIVE STATIC SCROLL CURSOR Identify the wrong statement about CUR1",
+    "option_1": "The cursor can be used to issue positioned Upd ate",
+    "option_2": "The cursor can't be used to issue positioned D elete",
+    "option_3": "The no of rows in the result table doesn't chan ge",
+    "option_4": "Content of any row can change",
+    "choice_type": "Multiple Choice",
+    "correct_answer": [
+      "option_3",
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 261,
+    "topic": "DB2",
+    "question": "THE BIND PACKAGE CAN BE THOUGHT OF AS A 'COMPILE' OF THE SQL PORTION OF THE PGM(T/F)",
+    "option_1": "T 50.PLANS ARE STORED IN DB2 _DIRECTORY____PACKAGE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 262,
+    "topic": "DB2",
+    "question": "For \"nullable\" columns, how does DB2 keep track of whether or not the column contains a known Value?",
+    "option_1": "The column will contain the value \"UNKNOWN\" when it s value is unknown",
+    "option_2": "Upon insertion, all known values within a \"null able\" column are flagged as \"null\" automatically",
+    "option_3": "DB2 creates an extra byte in front of each nul lable column. The byte contains a flag that telDB2 whether the column cont ains a known value",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 263,
+    "topic": "DB2",
+    "question": "A cursor declared with option WITH HOLD will re main open across",
+    "option_1": "CONNECT(type- 1)",
+    "option_2": "ROLLBACK",
+    "option_3": "COMMIT",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 264,
+    "topic": "DB2",
+    "question": "A PLAN WHICH CONSISTS OF A PACKAGE LIST CAN BE COMPARED TO A PDS WITH MEMBERS(T/F)",
+    "option_1": "PACKAGE",
+    "option_2": "PLAN",
+    "option_3": "DBRM",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 265,
+    "topic": "DB2",
+    "question": "A cursor declared with option WITH HOLD will remain open across",
+    "option_1": "CONNECT(type- 1)",
+    "option_2": "ROLLBACK",
+    "option_3": "COMMIT",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 266,
+    "topic": "DB2",
+    "question": "When you are defining a primary key and before the table is usable, which of the following must be created?",
+    "option_1": "A unique index, using the primary-key columns",
+    "option_2": "A duplicate index, using the primary-key columns",
+    "option_3": "A clustering index, using the primary-key columns",
+    "option_4": "A partitioning index, using the primary-key columns",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 267,
+    "topic": "DB2",
+    "question": "If an application has an IS lock on the table l evel, what kind of activity is it doing to the rows of the table?",
+    "option_1": "Reading",
+    "option_2": "Writing",
+    "option_3": "Updating",
+    "option_4": "Deleting",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 268,
+    "topic": "DB2",
+    "question": "If an application has an IS lock on the table level, what kind of activity is it doing to the rows of the table?",
+    "option_1": "Reading",
+    "option_2": "Writing",
+    "option_3": "Updating",
+    "option_4": "Deleting",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 269,
+    "topic": "DB2",
+    "question": "PLAN CONTAINS DBRM PACKAGE LISTS",
+    "option_1": "LOAD MODULE",
+    "option_2": "PLAN",
+    "option_3": "PACKAGE",
+    "option_4": "ALL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 270,
+    "topic": "DB2",
+    "question": "______________ Column must always have a value",
+    "option_1": "if we don't supply one, DB2 do es.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 271,
+    "topic": "DB2",
+    "question": "LOCK ARE HELD UNTIL COMMIT FOR ___ ISOLATION UR , CS , RR , ALL",
+    "option_1": "RR  (IF IN OPTIONS RS THEN MARK)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 272,
+    "topic": "DB2",
+    "question": "Explain all the statements of FILE",
+    "option_1": "CONTROL with all the combinations.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 273,
+    "topic": "DB2",
+    "question": "When the ____________________statement is executed, the associated indexed or relative file must be open in either INPUT or I",
+    "option_1": "O mode.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 274,
+    "topic": "DB2",
+    "question": "For a ___________ &_______________statement the file must be opened in I",
+    "option_1": "O mode.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 275,
+    "topic": "DB2",
+    "question": "Custom column",
+    "option_1": "header names in a SELECT list using the ____________ keyword.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 276,
+    "topic": "DB2",
+    "question": "_____________ is an Eclipse",
+    "option_1": "based tool that provides similar functionality to Control Center and SQL Assistant.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 277,
+    "topic": "DB2",
+    "question": "Fixed",
+    "option_1": "length tables allow for_______levels of nesting.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 278,
+    "topic": "DB2",
+    "question": "Return code ___tells the user that there were no more rows to return, essentially indicating an end",
+    "option_1": "of-file (EOF) condition.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 279,
+    "topic": "DB2",
+    "question": "________________________a commonly",
+    "option_1": "used reporting tool for DB2 z/OS environments .",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 280,
+    "topic": "DB2",
+    "question": "_____ / ______ / ______ Command Editor",
+    "option_1": "will accommodate \u201cunit of work\u201d processing .",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 281,
+    "topic": "DB2",
+    "question": "The __________statement provide facilities for producing serial and non",
+    "option_1": "serial searches. 101.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 282,
+    "topic": "DB2",
+    "question": "An SQLSTATE of ______ means no more rows meet our criteria (an end",
+    "option_1": "of-file condition).",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 283,
+    "topic": "DB2",
+    "question": "Within SQLCA, the first thing you will probably want to check is the SQL return code. You have a choice of: \u2022 ___________, the original return code, which may be platform",
+    "option_1": "specific.  ___________, added later as the ANSI standard, all-platform return code. 108.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 284,
+    "topic": "DB2",
+    "question": "Explain some common SQLCODE values: \uf0f0",
+    "option_1": "551 \uf0f0 -818 \uf0f0 -805 \uf0f0 -911 \uf0f0 -305 \uf0f0 -811 \uf0f0 -911",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 285,
+    "topic": "DB2",
+    "question": "A sequence of character",
+    "option_1": "strings bounded by (==) symbols called as _______________.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 286,
+    "topic": "DB2",
+    "question": "The ________________________technique allows the sub programs to access and process the data",
+    "option_1": "items in the caller\u2019s storage.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 287,
+    "topic": "DB2",
+    "question": "The ________________________technique allows the sub programs to access and process a copy of data",
+    "option_1": "items from the caller\u2019s storage.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 288,
+    "topic": "DB2",
+    "question": "The value clause for the procedure",
+    "option_1": "pointer data-item can contain only_________.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 289,
+    "topic": "DB2",
+    "question": "CURRENT",
+    "option_1": "DATA Function returns length of _________bytes.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 290,
+    "topic": "DB2",
+    "question": "Explain LOWER",
+    "option_1": "CASE and UPPER-CASE intrinsic functions? With example.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 291,
+    "topic": "DB2",
+    "question": "MOVE \u201cEVOLVED\u201d TO START",
+    "option_1": "UP INSPECT START- UP CONVERTING \u201cOELVD\u201d TO \u201cRGBAE\u201d DISPLAY START-UP. ==== \uf0e8 OUTPUT \uf0e8",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 292,
+    "topic": "DB2",
+    "question": "//SYSIN DD *                 Write down the code to do sum of the sequence from 1 till n num 12                                    which is given as 12. /* 150. \uf0d8 A PS1 dataset consists of 10 records and keys which has 5 duplicate keys. \uf0d8  Read all the 10 records if the key is unique then load into KSDS otherwise load into PS2 dataset. \uf04a.  [Necessary Pseudo code]. Write down the code to split ADDRESS! Into Line1, 2 and 3: 1)Any valid JCL code starts with",
+    "option_1": "//from position 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 293,
+    "topic": "DB2",
+    "question": "With ______________, implemented recovery is limited to the point",
+    "option_1": "in-time of the last copy of the database.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  }
+]

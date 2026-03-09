@@ -1,0 +1,2928 @@
+[
+  {
+    "questionnumber": 1,
+    "topic": "COBOL",
+    "question": "Consider the statement IF(A NUMERIC) DISPLAY A . The variable A can be",
+    "option_1": "NUMERIC",
+    "option_2": "ALPHABETIC",
+    "option_3": "ALPHANUMERIC",
+    "option_4": "NUMERIC OR ALPHANUMERIC",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 2,
+    "topic": "COBOL",
+    "question": "ZEROES and SPACES are _______ co nstants",
+    "option_1": "Figurative",
+    "option_2": "Numeric",
+    "option_3": "Non-numeric",
+    "option_4": "Alphabet",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 3,
+    "topic": "COBOL",
+    "question": "Indicate which one of the following is correct:",
+    "option_1": "01 level entry cannot have any picture clause",
+    "option_2": "01 level entries may appear in any section of th e Data Division",
+    "option_3": "01 level entries may appear only in the File Section",
+    "option_4": "01 level entries may appear only in the Working Storage Section and that too after all 77 level entries.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 4,
+    "topic": "COBOL",
+    "question": "What is the result of the follow ing?DIVIDE A INTO B GIVING C.",
+    "option_1": "C=A/B",
+    "option_2": "the reminder of B/A is stored in C",
+    "option_3": "C=B/A",
+    "option_4": "the reminder of A/B is stored in C",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 5,
+    "topic": "COBOL",
+    "question": "In DATA DIVISION the entries are 01 BILL. 02 A PIC 99. 02 FILLER PIC X(7). Mark the correct statement:",
+    "option_1": "MOVE \u2018AB\u2019 TO A .",
+    "option_2": "MOVE SPACES TO A .",
+    "option_3": "MOVE ZEROS TO A .",
+    "option_4": "ADD 99 TO FILLER.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 6,
+    "topic": "COBOL",
+    "question": "How many total bytes will be allocated for the following record description entries? 01 REC -1. 05 A PIC S9(4). 05 B PIC XXX. 05 C PIC 9.99. 05 D PIC S9(5) COMP -3. 05 E PIC 9(3) COMP.",
+    "option_1": "19",
+    "option_2": "16",
+    "option_3": "15",
+    "option_4": "18",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 7,
+    "topic": "COBOL",
+    "question": "Column 7 can be used to indicate",
+    "option_1": "Continuation line",
+    "option_2": "Debugg ing line",
+    "option_3": "Comment line",
+    "option_4": "Both Continuation & Comment line",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 8,
+    "topic": "COBOL",
+    "question": "Consider the following COBOL entries: 05 X PIC 99 VALUE 10. SUBTRACT 20 FROM X. The resultant value of X will be",
+    "option_1": "10",
+    "option_2": "00",
+    "option_3": "compile -time error",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 9,
+    "topic": "COBOL",
+    "question": "The 88 Level entry is used for :",
+    "option_1": "data items in WORKING -STORAGE SECTION",
+    "option_2": "items with RENAMES clause",
+    "option_3": "condition -names",
+    "option_4": "None of the above If choice c is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 10,
+    "topic": "COBOL",
+    "question": "The data names are as follows. A. SAVINGS -ACCOUNT B. ANNUAL -ALLOCATION -FOR -OVERHEAD C. SAMOUNT250 D. 12DEMAND",
+    "option_1": "All are correct",
+    "option_2": "A is valid",
+    "option_3": "C and D are valid",
+    "option_4": "None is valid",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 11,
+    "topic": "COBOL",
+    "question": "COMP is a",
+    "option_1": "Binary Field",
+    "option_2": "Hexadecimal Field",
+    "option_3": "Decimal Field",
+    "option_4": "Alphanumeric Field",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 12,
+    "topic": "COBOL",
+    "question": "A Physical sequential file has",
+    "option_1": "ZERO Directory Blocks",
+    "option_2": "1 Directory Blocks",
+    "option_3": "2 Directory Blocks",
+    "option_4": "Any of the above. If choice a i s selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 13,
+    "topic": "COBOL",
+    "question": "What is level 66 used for ?",
+    "option_1": "Elementary level item.",
+    "option_2": "Condition Names",
+    "option_3": "Numeric Items",
+    "option_4": "For RENAMES clause.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 14,
+    "topic": "COBOL",
+    "question": "What are the different data types available in COBOL?",
+    "option_1": "Alpha -nume ric (X)",
+    "option_2": "Alphabetic (A)",
+    "option_3": "Numeric (9)",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 15,
+    "topic": "COBOL",
+    "question": "If the file is opened in INPUT mode then the file can be used for",
+    "option_1": "reading transaction file data",
+    "option_2": "modification of some of its records",
+    "option_3": "writing new output data",
+    "option_4": "appending new records",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 16,
+    "topic": "COBOL",
+    "question": "Using a COPY statement you can",
+    "option_1": "Copy File definitions into a program",
+    "option_2": "Copy full/part of working storage definitions",
+    "option_3": "Copy p art of the code",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 17,
+    "topic": "COBOL",
+    "question": "In DATA DIVISION the entries are 01 WS-RECORD. 05 NAME PIC X(20). 05 AGE PIC 9(03). 05 FILLER PIC X(07). What is the length of WS -RECORD?",
+    "option_1": "23",
+    "option_2": "25",
+    "option_3": "28",
+    "option_4": "30",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 18,
+    "topic": "COBOL",
+    "question": "Consider the following PROCEDURE DIVISION entry: OPEN EXTEND IN -FILE Identify the correct statement",
+    "option_1": "Organization of IN -FILE is sequential and records can be added in the beginning",
+    "option_2": "Organization of IN -FILE is sequential and records can be added in the end",
+    "option_3": "Organization of IN -FILE is indexed and records can be added in the beginning",
+    "option_4": "Organization of IN -FILE is indexed and records can be added in the end",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 19,
+    "topic": "COBOL",
+    "question": "The Statement PERFORM P2 VARYING J FROM 1 BY 1 UNTIL J < 10 will execute",
+    "option_1": "10 times",
+    "option_2": "9 times",
+    "option_3": "1 time",
+    "option_4": "0 times",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 20,
+    "topic": "COBOL",
+    "question": "Given the following piece of code: CALL SUB -PGM USING A, B, C. CALL SUB -PGM USING A, C, C.",
+    "option_1": "Both CALL statements will always produce same result.",
+    "option_2": "Both CALL statements may produce different result.",
+    "option_3": "Compile -time error because SUB -PGM is a dataname.",
+    "option_4": "Compile -time error because A, B, C are used twice. If choice b is se lected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 21,
+    "topic": "COBOL",
+    "question": "COMPUTE X = A * B - C * D and COMPUTE X = (A * B) - (C * D)",
+    "option_1": "Are not the same",
+    "option_2": "Are same",
+    "option_3": "Syntactically wrong",
+    "option_4": "Will yield a run time error",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 22,
+    "topic": "COBOL",
+    "question": "To call a program statically",
+    "option_1": "The co mpiler option should be NODYNAM",
+    "option_2": "Its object module is to be included in the called programs load module",
+    "option_3": "All of the above",
+    "option_4": "None of the above.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 23,
+    "topic": "COBOL",
+    "question": "When do you check the file status code?",
+    "option_1": "After opening the f ile",
+    "option_2": "After closing the file",
+    "option_3": "After doing a read/write on the file",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 24,
+    "topic": "COBOL",
+    "question": "My program has an array defined to have 10 items. Due to a bug, I find that even if the program access the 11th item in t his array, the program does not abend. What is wrong with it?",
+    "option_1": "Must use compiler option SSRANGE",
+    "option_2": "Must use compiler option NOSSRANGE",
+    "option_3": "Must use compiler option DYNAM",
+    "option_4": "Must use compiler option NODYNAM",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 25,
+    "topic": "COBOL",
+    "question": "What is a scope terminator?",
+    "option_1": "Scope terminator is used to mark the end of a verb.",
+    "option_2": "Scope terminator stops the work of the previous verb.",
+    "option_3": "all of the above",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 26,
+    "topic": "COBOL",
+    "question": "A Binary Number is",
+    "option_1": "Strings of 0s and 1s",
+    "option_2": "Upto 4 digits are stored in 2 bytes",
+    "option_3": "5-9 digits in 4 bytes or a word",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 27,
+    "topic": "COBOL",
+    "question": "What does the IS NUMERIC clause establish ?",
+    "option_1": "Test for 0 to 9",
+    "option_2": "Test for 0 to 9 and + and \u2013",
+    "option_3": "Test f or all ALPHABET characters",
+    "option_4": "Doing Nothing",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 28,
+    "topic": "COBOL",
+    "question": "Consider the following COBOL entries 05 X PIC 99 VALUE 10. ADD 40 TO X. COMPUTE Y = 3 * X - 40. The result in Y is",
+    "option_1": "10",
+    "option_2": "40",
+    "option_3": "Compile or Run ti me error",
+    "option_4": "none of these",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 29,
+    "topic": "COBOL",
+    "question": "When a file contains two types of data records,",
+    "option_1": "the FILE SECTION should contain two FD entries for it.",
+    "option_2": "the FILE SECTION should contain only one FD entry for it.",
+    "option_3": "the FILE SECTI ON should contain no FD entries for it.",
+    "option_4": "the FILE SECTION should contain four FD entries for it.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 30,
+    "topic": "COBOL",
+    "question": "If the initial values are as follows Statements X PIC 99 Y PIC 9(4) Z PIC 99V99 Initial Values 15 1000 23.45 After executing this MULTIPLY X BY Z GIVING Y command The value of Y will be",
+    "option_1": "1500",
+    "option_2": "1000",
+    "option_3": "0351",
+    "option_4": "0531",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 31,
+    "topic": "COBOL",
+    "question": "In the Procedure Division Statement: OPEN OUTPUT FILE 1.Which of the following is not true about FILE1.",
+    "option_1": "There must be a select clause for this file in the file -control paragraph of the Environment Division.",
+    "option_2": "There must be an FD entry in the FILE -SECTION of the DATA DIVISION.",
+    "option_3": "The file name must appe ar in a WRITE Statement in the PROCEDURE DIVISION.",
+    "option_4": "There must be a CLOSE Statement in the PROCEDURE DIVISION.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 32,
+    "topic": "COBOL",
+    "question": "There is a file whose ORGANIZATION is INDEXED. If you want to read records from the file in RANDOM f ashion as well as sequentially which of the following access mode would you specify?",
+    "option_1": "SEQUENTIAL",
+    "option_2": "RANDOM",
+    "option_3": "DYNAMIC",
+    "option_4": "ACCESS MODE has nothing to do with it",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 33,
+    "topic": "COBOL",
+    "question": "A Redefined Field uses the same space of the fiel d which you redefine",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Both",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 34,
+    "topic": "COBOL",
+    "question": "Can more than one STOP RUN be coded in a program ?",
+    "option_1": "Yes",
+    "option_2": "No",
+    "option_3": "In certain circumstances Yes",
+    "option_4": "None of the above If choice a is selecte d set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 35,
+    "topic": "COBOL",
+    "question": "A compile creates a",
+    "option_1": "Source Code",
+    "option_2": "Object Module",
+    "option_3": "Load Module",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 36,
+    "topic": "COBOL",
+    "question": "What PIC clause is coded when USAGE IS INDEX is specified for a data item ?",
+    "option_1": "Numeric",
+    "option_2": "Alpha Nume ric",
+    "option_3": "Comp 3",
+    "option_4": "No Picture Clause",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 37,
+    "topic": "COBOL",
+    "question": "A5 OCCURS 5 TIMES PIC 99. The storage bytes used for this are .",
+    "option_1": "22",
+    "option_2": "16",
+    "option_3": "10",
+    "option_4": "12",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 38,
+    "topic": "COBOL",
+    "question": "S0C7 may be due to",
+    "option_1": "Bad Subscript/index",
+    "option_2": "Close an unopened dataset",
+    "option_3": "Bad exit from a perform",
+    "option_4": "Numeric operation on non -numeric data",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 39,
+    "topic": "COBOL",
+    "question": "In a Working Storage entry the VALUE clause",
+    "option_1": "should follow the PIC clause",
+    "option_2": "should precede the PIC clause",
+    "option_3": "can either precede or follow",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 40,
+    "topic": "COBOL",
+    "question": "A Link Edit creates a",
+    "option_1": "Source Code",
+    "option_2": "Object Module",
+    "option_3": "Load Module",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 41,
+    "topic": "COBOL",
+    "question": "When a file is opened in ou tput mode then it can be used for",
+    "option_1": "reading transaction file data",
+    "option_2": "read and modify some of its records",
+    "option_3": "writing new output data",
+    "option_4": "appending new records",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 42,
+    "topic": "COBOL",
+    "question": "The hierarchy of the execution of logical operators is",
+    "option_1": "NOT AND OR",
+    "option_2": "AND OR NOT",
+    "option_3": "OR AND NOT",
+    "option_4": "OR NOT AND",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 43,
+    "topic": "COBOL",
+    "question": "Consider the following code in a COBOL Program. entries appear in the WORKING -STORAGE SECTION: 01 DATE -TODAY. 05 YY PIC XX VALUE \"90\". 05 MM PIC XX VALUE \"12\". 05 DD PIC XX VALUE \"31\". 01 DATE -EDIT PIC XX/XX/XX. MOVE DATE -TODAY TO DATE -EDIT.",
+    "option_1": "901231",
+    "option_2": "90/12/31",
+    "option_3": "31/12/90",
+    "option_4": "311290",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 44,
+    "topic": "COBOL",
+    "question": "For Packed Decimal numeric data",
+    "option_1": "The zone is elimi nated but for the last digit",
+    "option_2": "Storage length is always EVEN number of bytes",
+    "option_3": "The last byte contains the sign",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 45,
+    "topic": "COBOL",
+    "question": "Consider the following IF condition: IF A LESS 1200 IF B GREATER 25 MOVE 47 TO C ELSE MOVE 57 TO C IF A GREATER 249 MOVE 67 TO C ELSE NEXT SENTENCE ELSE IF B LESS 67 MOVE 27 TO C What will be the value of C, when A is 137 and B is 25",
+    "option_1": "27",
+    "option_2": "57",
+    "option_3": "67",
+    "option_4": "none",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 46,
+    "topic": "COBOL",
+    "question": "Consider the following two statements MOVE 10 TO N PERFORM PARA -X N TIMES STOP RUN PARA -X MOVE 5 TO N how many times PARA -X will be executed?",
+    "option_1": "10",
+    "option_2": "5",
+    "option_3": "infinite",
+    "option_4": "execution error",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 47,
+    "topic": "COBOL",
+    "question": "What will happen if we give GOBACK instead of STOPRUN in a COBOL program which is not called by some other program ?",
+    "option_1": "The program abends",
+    "option_2": "The program not abends but gives error message",
+    "option_3": "Nothing Happened",
+    "option_4": "The program abends with an error message",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 48,
+    "topic": "COBOL",
+    "question": "Study the following Select the correct statement.",
+    "option_1": "Copy Statement and include statements are executed at COMPILE time.",
+    "option_2": "Copy Statement are executed at COMPILE time AND Include Statements at RUN time.",
+    "option_3": "Copy Statement are executed at RUN compile time Include Statements at COMPILE time.",
+    "option_4": "Copy Statement and include sta tements are executed at RUN time.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 49,
+    "topic": "COBOL",
+    "question": "How do you define a OCCURS in COBOL?",
+    "option_1": "On 01 level only",
+    "option_2": "On 10 levcel only",
+    "option_3": "Not on 01 level",
+    "option_4": "Not on 10 levcel",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 50,
+    "topic": "COBOL",
+    "question": "A record layout i s as follows\u2026. 01 REC -1. 02 FIRST -GROUP. 03 A1 PIC X(4). 03 A2 PIC 99. 02 REDEFINES FIRST -GROUP. 03 A3 PIC 999. 03 A4 PIC 999. 02 THIRD -GROUP. 03 A5 OCCURS 5 TIMES PIC 99. Determine the total number of bytes in the foll owing:",
+    "option_1": "22",
+    "option_2": "16",
+    "option_3": "14",
+    "option_4": "12",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 51,
+    "topic": "COBOL",
+    "question": "INITIALIZE keyword will",
+    "option_1": "Move spaces to alphabetic fields and zeros to alphanumeric fields",
+    "option_2": "Move zeros to alphabetic fields and spaces to alphanumeric fields",
+    "option_3": "Move spac es to alphabetic fields and alphanumeric fields",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 52,
+    "topic": "COBOL",
+    "question": "What is the size of W -REC in the following 01 W -REC. 05 A PIC 9(4)V99 05 B READEFINES A 10 C PIC XX 10 D PIC S9(4) 05 E OCCURS 7 PIC ZZ.ZZ 05 F OCCURS 5 10 G PIC ZZ.ZZZ99 10 H OCCURS 3 15 J PIC 9(3) 15 K PIC V99",
+    "option_1": "177",
+    "option_2": "161",
+    "option_3": "180",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 53,
+    "topic": "COBOL",
+    "question": "Using INDEX",
+    "option_1": "You can do a SEARCH",
+    "option_2": "You can do a SEARCH ALL",
+    "option_3": "You can do both SEARCH and SEARCH ALL",
+    "option_4": "You cant do SEARCH or SEARCH ALL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 54,
+    "topic": "COBOL",
+    "question": "Consider two data items 77 W -A PIC 9(3)V99 VALUE 23.75 77 W -B PIC ZZ9V99 VALUE 123.45 After execution of the statement MOVE W -A TO W -B What will be W -B value?",
+    "option_1": "123.75",
+    "option_2": "23.75",
+    "option_3": "023.75",
+    "option_4": "invalid move",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 55,
+    "topic": "COBOL",
+    "question": "Consider the following piece of code 01 GROSS -PAY. 05 BASIC -PAY PIC 9(5). 05 ALLOWANCES PIC 9(3). If BASIC -PAY has a value 1000 a nd ALLOWANCES has a value of 250, what will be displayed by the statement DISPLAY GROSS -PAY",
+    "option_1": "1250",
+    "option_2": "01000250",
+    "option_3": "01250",
+    "option_4": "1.250",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 56,
+    "topic": "COBOL",
+    "question": "Consider the following piece of code 01 GROUP -ITEM 05 AMOUNT -1 PIC 99V9 USAGE COMP VALUE 50. 05 AMOUNT -2 PIC 9(4)V99 USAGE COMP. MOVE ZERO TO GROUP -ITEM. ADD 100 TO AMOUNT -1 what will be the content of AMOUNT -1?",
+    "option_1": "50",
+    "option_2": "100",
+    "option_3": "0",
+    "option_4": "unpredict able",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 57,
+    "topic": "COBOL",
+    "question": "Consider the following program statements MOVE 0 TO SW, NO -OF-REC PERFORM PRI -OUT UNTIL SW=1 DISPALY NO -OF-REC STOP RUN PRI-OUT. ADD 1 TO NO -OF-REC. READ IN -FILE AT END MOVE 1 TO SW. WRITE OUT -REC FROM IN-REC. If the IN -FILE contains 1000 records what value will be displayed after the PERFORM is over? Assume that NO -OF-REC has PIC 9(4)",
+    "option_1": "1000",
+    "option_2": "1001",
+    "option_3": "1",
+    "option_4": "None of the above since there is a syntax error",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 58,
+    "topic": "COBOL",
+    "question": "PERFORM ACCUMULATE -TOTALS VARYING A FROM 1 BY 2 UNTIL A >2 AFTER B FROM1 BY 1 UNTIL B>2 AFTER C FROM 2 BY -1 UNTIL C<2 The paragraph ACCUMULATE -TOTALS would be executed",
+    "option_1": "18 times",
+    "option_2": "4 times",
+    "option_3": "2 times",
+    "option_4": "24 times",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 59,
+    "topic": "COBOL",
+    "question": "Study the data descriptions and answer the questions given below 01 ORDER RECORD 05 OUT -HEADER PIC X(50) 05 ITEM -COUNT PIC 99 A 05 OUT -ITEM PIC X(20) OCCURS 1 TO 20 DEPENDING ON ITEM -COUNT 01 NAME -AND-ADDRESS B 05 N -AND -A-LINE OCCURES 5 05 LINE -LENGTH PIC 9 C 05 N -AND -A-CHAR PIC X OCCURS 1 TO 20 DEPENDING ON LINE -LENGTH 01 SALES -LIST 05 SALESMAN -COUNT PIC 99 D 05 SALES PIC 9(6) OCCURS 1 TO 100 DEPENDING ON SALESMAN -COUNT 01 ORDER -RECO RD 05 NO -OF-BRANDS PIC 99 E 05 BRAND -PURCHASED OCCURS 1 TO 15 DEPENDING ON NO -OF-BRANDS which of the following is true?",
+    "option_1": "A C and D are valid",
+    "option_2": "A and E are valid",
+    "option_3": "A and B are not valid",
+    "option_4": "All are valid If choice a is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 60,
+    "topic": "COBOL",
+    "question": "Consider the following: 77 W -NUM PIC 9 VALUE 0 MOVE 1 TO W -NUM PERFORM PARA -X UNTIL W -NUM > 9 PARA -X ADD 1 TO W -NUM How many times PARA -X is executed ?",
+    "option_1": "10",
+    "option_2": "9",
+    "option_3": "11",
+    "option_4": "Infinite loop",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 61,
+    "topic": "COBOL",
+    "question": "The order of precedence of arithmetic operators in an expression can be overridden with the use of",
+    "option_1": "[ ]",
+    "option_2": "( )",
+    "option_3": "{ }",
+    "option_4": "Any of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 62,
+    "topic": "COBOL",
+    "question": "Observe the following code 01 A1 05 B PIC 99 05 C PIC X(4) 01 A2 05 B PIC 99V99 05 C PIC A(4) pick out the valid statement from the following",
+    "option_1": "A1 and A2 can not have sub -ordinates",
+    "option_2": "A1 and A2 can have the same sub -ordinates bu t must have same PIC clause",
+    "option_3": "there is nothing wrong",
+    "option_4": "A1 and A2 can have same sub -ordinates provided they are not at 01 level",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 63,
+    "topic": "COBOL",
+    "question": "Consider the following FD FILE -1 01 REC -1 PIC X(80) ...... WORKING -STORAGE S ECTION 01 W -REC PIC X(90) ........ PROCEDURE DIVISION FIRST -PARA ....... READ FILE -1 INTO W -REC AT END MOVE 1 TO EOF -FLAG Which of the following is true with respect to the above?",
+    "option_1": "REC -1 will contain nothing and W -REC will contain the con tents of the record read",
+    "option_2": "REC -1 and W -REC contain the same data",
+    "option_3": "Syntax is invalid and error will occur",
+    "option_4": "REC -1 and W -REC must be of same size",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 64,
+    "topic": "COBOL",
+    "question": "How many times PARA -A is performed: PERFORM PARA -A VARYING TI MES -COUNTER FROM 1 BY 1 UNTIL TIMES -COUNTER >0",
+    "option_1": "10",
+    "option_2": "1",
+    "option_3": "11",
+    "option_4": "0",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 65,
+    "topic": "COBOL",
+    "question": "A paragraph PARA -X is to be executed when none of the data names A, B and C has value of 1. Which of the following will achieve this ?",
+    "option_1": "IF A NOT = 1 OR B NOT = 1 OR C NOT = 1 PERFORM PARA -X",
+    "option_2": "IF NOT A= 1 AND B= 1 AND C = 1 PERFORM PARA -X",
+    "option_3": "IF A NOT =1 IF NOT B = 1 OR C= 1 PERFORM PARA -X",
+    "option_4": "IF A NOT = 1 AND B NOT = 1 AND C NOT = 1 PERFORM PARA -X",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 66,
+    "topic": "COBOL",
+    "question": "Given the following: 77 A PIC 9V9 VALUE 9.5 77 B PIC 9 VALUE 9. 77 C PIC V9 VALUE 0.8 77 D PIC 9 77 E PIC 9 77 F PIC 9V999 what are the contents of D E and F after the following statements are executed: COMPUTE F ROUNDED=A+C/B MULTIPLY A BY C GIVING E ADD B C A GIVING D ROUNDED",
+    "option_1": "F=9.589 E=8 D=1",
+    "option_2": "F=9.589 E=8 D=9",
+    "option_3": "F=9.589 E=7 D=9",
+    "option_4": "F=9.589 E=7 D=1",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 67,
+    "topic": "COBOL",
+    "question": "While Using SEARCH ALL",
+    "option_1": "The Table must be in sorted order",
+    "option_2": "The table n eed not to be in sorted order",
+    "option_3": "ASCENDING/DESCENDING KEY clause not to be used",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 68,
+    "topic": "COBOL",
+    "question": "Consider the following code: 77 A PIC 99V99 VALUE 55.35 77 B PIC 99V999 VALUE 32.754 ADD B TO A ON SIZE ERROR DISPLAY \"ERROR!!!\" What will be the result?",
+    "option_1": "A=88.10, B=32.754",
+    "option_2": "A=87.00 B=32.754",
+    "option_3": "A=87.10 B=32.754",
+    "option_4": "ERROR!!! Will be displayed on the screen.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 69,
+    "topic": "COBOL",
+    "question": "Study the DATA DIVISION en tries and the three PROCEDURE DIVISION entries given below: 01 END -OF-FILE -SWITCH PIC XXX. 88 NO -MORE -RECS VALUE \"YES\". 88 MORE -RECS VALUE \"NO\".",
+    "option_1": "(i) and (ii)",
+    "option_2": "(ii) and (iii)",
+    "option_3": "(i) and (iii)",
+    "option_4": "All",
+    "option_9": "READ SAMPLE -FILE AT END MOVE \"YES\" TO NO -MORE -RECS. (ii) IF NO -MORE -RECS = \"YES\" GO TO LAST -PARA . (iii) IF MORE -RECS = \u201cNO\u201d GO TO LAST -PARA .",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 70,
+    "topic": "COBOL",
+    "question": "What if any, is the syntax error in the followin g piece of code 01 B PIC A(7). 01 C PIC 9(4). IF (B is NUMERIC) ADD 10 TO C",
+    "option_1": "the condition check in the IF statement is wrong",
+    "option_2": "nothing is wrong",
+    "option_3": "ADD 10 TO C",
+    "option_4": "both B and C should have same size.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 71,
+    "topic": "DB2",
+    "question": "What is correct to say about DBRM?",
+    "option_1": "A DBRM can be bound into a package",
+    "option_2": "A DBRM can be bound into a plan",
+    "option_3": "A DBRM can be bound into a collection",
+    "option_4": "A DBRM can be bound i nto a package or plan",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 72,
+    "topic": "DB2",
+    "question": "The process of replacing the SQL statements with program library calls is done by:",
+    "option_1": "COMPILER",
+    "option_2": "PRECOMPILER",
+    "option_3": "LINKER",
+    "option_4": "BIND",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 73,
+    "topic": "DB2",
+    "question": "A SELECT statement that could return more than one row to an application program must be coded using what kind of processing?",
+    "option_1": "Data processing",
+    "option_2": "Cursor processing",
+    "option_3": "Statement processing",
+    "option_4": "File processing",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 74,
+    "topic": "DB2",
+    "question": "What must host vari ables begin with when they are used within SQL delimiters?",
+    "option_1": "A comma",
+    "option_2": "A colon",
+    "option_3": "A prefix HV -",
+    "option_4": "A prefix WS -",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 75,
+    "topic": "DB2",
+    "question": "As part of a subquery, what does IN do?",
+    "option_1": "It allows DB2 to eliminate some values.",
+    "option_2": "It allows DB2 to return multiple values.",
+    "option_3": "Both A & B",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 76,
+    "topic": "DB2",
+    "question": "For SQL Data Type DATE , the COBOL Data Type will be",
+    "option_1": "X(4)",
+    "option_2": "X(6)",
+    "option_3": "X(8)",
+    "option_4": "X(10)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 77,
+    "topic": "DB2",
+    "question": "What are the two basic parts to a table name?",
+    "option_1": "The table name and its identifier",
+    "option_2": "The creator of the table and its identifier",
+    "option_3": "The creation date and expiration date",
+    "option_4": "The creator/owner/schema of the table and the simple table name If choice d is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 78,
+    "topic": "DB2",
+    "question": "Which command is used to remove duplicates from the result of a SELECT statement?",
+    "option_1": "No duplicates",
+    "option_2": "With no duplicates",
+    "option_3": "Distinct",
+    "option_4": "Unique",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 79,
+    "topic": "DB2",
+    "question": "The precompiler performs the following:",
+    "option_1": "Includes DCLGEN member and SQLCA",
+    "option_2": "Verifies the SQL syntax",
+    "option_3": "Looks for SQL statements and for host -variable definitions",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 80,
+    "topic": "DB2",
+    "question": "Which program do you use to run a COBOL -DB2 Batch application?",
+    "option_1": "IKJEFD01",
+    "option_2": "IKJEFT01",
+    "option_3": "IKJEFD02",
+    "option_4": "IKJEFT02",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 81,
+    "topic": "DB2",
+    "question": "Which one of the following statements best describe a SMALLINT?",
+    "option_1": "It is a four -byte integer that has a range of + or - two billion.",
+    "option_2": "It is a signed half word that takes up two bytes. It contains a value up to + or - 32K",
+    "option_3": "It is a packed decimal number.",
+    "option_4": "It is a hexidecimal number.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 82,
+    "topic": "DB2",
+    "question": "How many unique keys can be defined for a table?",
+    "option_1": "Just one",
+    "option_2": "Just two",
+    "option_3": "Just three",
+    "option_4": "More than one",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 83,
+    "topic": "DB2",
+    "question": "The full forms of SQLCA and DBRM respectively are:",
+    "option_1": "SQL Communication Area and Data Base Resource Module",
+    "option_2": "SQL Common Area and Data Base Request Module",
+    "option_3": "SQL Common Area and Data Base Resource Modu le",
+    "option_4": "SQL Communication Area and Data Base Request Module",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 84,
+    "topic": "DB2",
+    "question": "DB2 is not accessed during precompilation process",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Depends on SQL statement used by program",
+    "option_4": "Depends on COBOL statement used by pr ogram",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 85,
+    "topic": "DB2",
+    "question": "Indicator variables are used in a COBOL program",
+    "option_1": "to indicate a null value",
+    "option_2": "to indicate a primary key",
+    "option_3": "to indicate a binary object",
+    "option_4": "to indicate whether a cursor is open or closed If choice a is sel ected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 86,
+    "topic": "DB2",
+    "question": "Which of the following is done by PRECOMPILER?",
+    "option_1": "Syntax check the SQL",
+    "option_2": "Adds the consistency token to each CALL and SQL statement",
+    "option_3": "Creates the DBRM",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 87,
+    "topic": "DB2",
+    "question": "SELECT * FROM EMP WHERE EMPCODE = \u2018999\u2019; Assume a table EMP with a column EMPCODE(char, 3 bytes), and no row with EMPCODE = \u2018999\u2019 When the above SQL query is executed in SPUFI, what will be the return code?",
+    "option_1": "0",
+    "option_2": "+100",
+    "option_3": "-100",
+    "option_4": "-305 If choice b is selected set sc ore to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 88,
+    "topic": "DB2",
+    "question": "What does the acronym SQL stand for?",
+    "option_1": "Structured Question Language",
+    "option_2": "Structured Quotient Language",
+    "option_3": "Structured Query Language",
+    "option_4": "Standard Queuing List",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 89,
+    "topic": "DB2",
+    "question": "A collection is a group of",
+    "option_1": "Plans",
+    "option_2": "DBRMs",
+    "option_3": "Packages",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 90,
+    "topic": "DB2",
+    "question": "What is an RDBMS?",
+    "option_1": "A database that stores data in a table format",
+    "option_2": "A database that is not concurrent",
+    "option_3": "A database that always has the same columns and rows of data",
+    "option_4": "A database that does not support Lock and Load",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 91,
+    "topic": "DB2",
+    "question": "A package must be bound into a plan before it is usable",
+    "option_1": "True",
+    "option_2": "False",
+    "option_3": "Depends on Application logic",
+    "option_4": "A package can't be bound to a plan If choice a is selec ted set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 92,
+    "topic": "DB2",
+    "question": "EXEC SQL SELECT EMPNAME INTO :H -EMPNAME FROM EMP END -EXEC. Assume a table EMP, having a column EMPNAME and corresponding host variable H -EMPNAME defined in the cobol program. If there are 3 rows in the table, what will happen when the query gets executed in the program?",
+    "option_1": "H-EMPNAME will store the name from the 3rd row",
+    "option_2": "H-EMPNAME will store the name from the 1st row",
+    "option_3": "H-EMPNAME can store the name from any of the 3 rows randomly because the o rder of retrieval is not guaranteed in a SELECT SQL",
+    "option_4": "The query will return a non -zero SQLCODE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 93,
+    "topic": "DB2",
+    "question": "At a conceptual level, an \"entity\" on a logical model will often map to which DB2 object?",
+    "option_1": "Index",
+    "option_2": "Table",
+    "option_3": "Column",
+    "option_4": "Database",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 94,
+    "topic": "DB2",
+    "question": "What does the isolation level - Cursor Stability do?",
+    "option_1": "Hold lock on row until next read",
+    "option_2": "Lock rows read until commit",
+    "option_3": "Lock qualifying rows until commit",
+    "option_4": "No READ lock If choice a is selec ted set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 95,
+    "topic": "DB2",
+    "question": "During the bind process DB2",
+    "option_1": "Checks security.",
+    "option_2": "Compares column and table names against DB2 catalog.",
+    "option_3": "Builds access path strategy for each SQL statement.",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 96,
+    "topic": "DB2",
+    "question": "During a BIND process, DB2 checks existence of necessary DB2 objects,like Tables, Views.",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on SQL code used by program",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 97,
+    "topic": "DB2",
+    "question": "Where is the isolation level specified?",
+    "option_1": "On precom pile step",
+    "option_2": "On Compile step",
+    "option_3": "On BIND",
+    "option_4": "Any of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 98,
+    "topic": "DB2",
+    "question": "One DBRM corresponds to exactly one source module",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on compiler option",
+    "option_4": "None of the above If choice a is selected set s core to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 99,
+    "topic": "DB2",
+    "question": "For SQL Data Type DECIMAL, the COBOL Data Type will be",
+    "option_1": "S9(9) COMP -1",
+    "option_2": "S9(9) COMP -2",
+    "option_3": "S9(9) COMP -3",
+    "option_4": "S9(9) COMP -4",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 100,
+    "topic": "DB2",
+    "question": "Consider the following column definitions: ... AMOUNT1 DECIMAL(9,2) DEFAULT 5 00.00, AMOUNT2 DECIMAL(9,2) NOT NULL WITH DEFAULT, ... If a row is inserted without specifying AMOUNT2, the value stored for AMOUNT2 will be",
+    "option_1": "500",
+    "option_2": "0",
+    "option_3": "NULL",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 101,
+    "topic": "DB2",
+    "question": "Columns used in the GRO UP BY clause must also be specified in the SELECT clause.",
+    "option_1": "true",
+    "option_2": "false",
+    "option_3": "cant say",
+    "option_4": "none of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 102,
+    "topic": "DB2",
+    "question": "If a column contains NULL value, Indicator Variable is set to",
+    "option_1": "NEGATIVE",
+    "option_2": "POSITIVE",
+    "option_3": "NULL",
+    "option_4": "SPACES",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 103,
+    "topic": "DB2",
+    "question": "Which of the following is True about NULL values?",
+    "option_1": "If DB2 finds a negative value in the indicator, the column is set to null",
+    "option_2": "If DB2 finds a negative value in the indicator, the value in the host variab le is ignored",
+    "option_3": "If DB2 finds a positive value in the indicator, the column is set to corresponding host variable",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 104,
+    "topic": "DB2",
+    "question": "Which of the following would you use to store music?",
+    "option_1": "DBCLOBs",
+    "option_2": "CLOBs",
+    "option_3": "MCLOBs",
+    "option_4": "BLOBs",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 105,
+    "topic": "DB2",
+    "question": "DB2 provides the followings levels of locking",
+    "option_1": "Row and Page level locking",
+    "option_2": "Row, Page and Table level locking",
+    "option_3": "Row, Page and Tablespace level locking",
+    "option_4": "Row, Page, Table and Tablespace level locking",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 106,
+    "topic": "DB2",
+    "question": "Which of the following is not a valid Lock mode?",
+    "option_1": "S - Share",
+    "option_2": "U - Update",
+    "option_3": "SI - Share Intent",
+    "option_4": "all above are valid lock modes",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 107,
+    "topic": "DB2",
+    "question": "What must be true of a Uniqu e key?",
+    "option_1": "There can be only one per table.",
+    "option_2": "It can consist of one or several columns that make up a unique identifier.",
+    "option_3": "It can contain only one column that uniquely identifies an entity.",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 108,
+    "topic": "DB2",
+    "question": "What is true about Packages?",
+    "option_1": "They contain executable forms of SQL statements",
+    "option_2": "Packages are stored in the DB2 catalog",
+    "option_3": "packages contain the DB2 access plan",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 109,
+    "topic": "DB2",
+    "question": "Which of the following is corr ect about DBRM?",
+    "option_1": "DBRM contains program's source SQL statements",
+    "option_2": "DBRM becomes input to BIND",
+    "option_3": "DBRM is stored as a member in a PDS",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 110,
+    "topic": "DB2",
+    "question": "You want a cursor to be defined so that it remains open eve n after a commit operation.How can this be achieved?",
+    "option_1": "Declare the cursor with WITH HOLD option",
+    "option_2": "Declare the cursor with WITH NO CLOSE option",
+    "option_3": "Declare the cursor with PERMANENT OPEN option",
+    "option_4": "Declare the cursor with WITH NOHOLD option",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 111,
+    "topic": "DB2",
+    "question": "SELECT * FROM EMP WHERE EMPCODE like \u2018%9\u2019; Assume a table EMP with 2 columns \u2013 SALARY(numeric, 4 bytes, not null) and EMPCODE(numeric, 3 bytes, not null). If there are 10 rows in the table what will be result of the executio n of above query?",
+    "option_1": "Rows with EMPCODEs having 9 as the first byte will be retrieved.",
+    "option_2": "Rows with EMPCODEs having 9 as the last byte will be retrieved.",
+    "option_3": "All the 10 rows will be retrieved",
+    "option_4": "The query would return a non -zero return SQLCODE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 112,
+    "topic": "DB2",
+    "question": "For SQL Data Type TIMESTAMP , the COBOL Data Type will be",
+    "option_1": "X(8)",
+    "option_2": "X(16)",
+    "option_3": "X(26)",
+    "option_4": "X(32)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 113,
+    "topic": "DB2",
+    "question": "On z/OS, the precompiler doesn't access DB2 during its processing:",
+    "option_1": "TRUE",
+    "option_2": "FALSE",
+    "option_3": "Depends on program code",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 114,
+    "topic": "DB2",
+    "question": "Which is not a valid Page -level lock?",
+    "option_1": "S",
+    "option_2": "U",
+    "option_3": "X",
+    "option_4": "IX",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 115,
+    "topic": "DB2",
+    "question": "When a cursor is decl ared as scrollable, you can use FETCH statements to:",
+    "option_1": "Jump around and directly retrieve a row within result table",
+    "option_2": "Scroll backwards as well as forwards",
+    "option_3": "Both A and B",
+    "option_4": "Only B",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 116,
+    "topic": "DB2",
+    "question": "Identify the wrong statement :",
+    "option_1": "DCLGEN can be used only on existing tables",
+    "option_2": "DCLGEN can be used on existing or non existing tables",
+    "option_3": "DB2 must be active before DCLGEN can be used",
+    "option_4": "SQL INCLUDE statement is used for using DCLGEN output",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 117,
+    "topic": "DB2",
+    "question": "A cursor declared with option WITH HOLD will be held until",
+    "option_1": "CONNECT(type -1)",
+    "option_2": "ROLLBACK",
+    "option_3": "Close cursor statement",
+    "option_4": "All the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 118,
+    "topic": "DB2",
+    "question": "Two programmers coded SQL as follows. P1: EXEC SQL INSERT INTO DB2D.TABLE1 V ALUES(:VAR1, :VAR2, DEFAULT) END -EXEC. P2: EXEC SQL INSERT INTO DB2D.TABLE1 VALUES(:VAR1, :VAR2, DEFAULT) END -EXEC.",
+    "option_1": "P1 is correct and P2 is incorrect",
+    "option_2": "P1 is incorrect and P2 is correct",
+    "option_3": "Both P1 and P2 are correct",
+    "option_4": "Both P1 and P2 are incorr ect",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 119,
+    "topic": "DB2",
+    "question": "Consider the following Cursor definition. DECLARE CUR1 SENSITIVE STATIC SCROLL CURSOR Identify the wrong statement about CUR1",
+    "option_1": "The cursor can be used to issue positioned Update",
+    "option_2": "The cursor can't be use d to issue positioned Delete",
+    "option_3": "The no of rows in the result table doesn't change",
+    "option_4": "Content of any row can change",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 120,
+    "topic": "DB2",
+    "question": "For \"nullable\" columns, how does DB2 keep track of whether or not the column contains a known Value?",
+    "option_1": "The column will contain the value \"UNKNOWN\" when its value is unknown",
+    "option_2": "Upon insertion, all known values within a \"nullable\" column are flagged as \"null\" automatically",
+    "option_3": "DB2 creates an extra byte in front of each nullable column. The byte conta ins a flag that tell DB2 whether the column contains a known value",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 121,
+    "topic": "DB2",
+    "question": "A cursor declared with option WITH HOLD will remain open across",
+    "option_1": "CONNECT(type -1)",
+    "option_2": "ROLLBACK",
+    "option_3": "COMMIT",
+    "option_4": "None of the a bove",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 122,
+    "topic": "DB2",
+    "question": "When you are defining a primary key and before the table is usable, which of the following must be created?",
+    "option_1": "A unique index, using the primary -key columns",
+    "option_2": "A duplicate index, using the primary -key column s",
+    "option_3": "A clustering index, using the primary -key columns",
+    "option_4": "A partitioning index, using the primary -key columns",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 123,
+    "topic": "DB2",
+    "question": "If an application has an IS lock on the table level, what kind of activity is it doing to the rows of the table?",
+    "option_1": "Reading",
+    "option_2": "Writing",
+    "option_3": "Updating",
+    "option_4": "Deleting",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 124,
+    "topic": "JCL VSAM",
+    "question": "In the JCL executing IDCAMS, the AMS commands are given under the DD statement",
+    "option_1": "SYSPRINT",
+    "option_2": "SYSUT2",
+    "option_3": "SYSLI B",
+    "option_4": "SYSIN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 125,
+    "topic": "JCL VSAM",
+    "question": "The size of the control area for a VSAM cluster is specified by",
+    "option_1": "CONTROLAREASIZE parameter",
+    "option_2": "CONTROLINTERVALSIZE parameter",
+    "option_3": "FREESPACE parameter",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 126,
+    "topic": "JCL VSAM",
+    "question": "An easy way of reorganizing a VSAM data set",
+    "option_1": "Use EXAMINE command",
+    "option_2": "Use LISTCAT command",
+    "option_3": "Use REPRO command",
+    "option_4": "Reorganization is never done",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 127,
+    "topic": "JCL VSAM",
+    "question": "VSAM data sets can be created in",
+    "option_1": "MAGNETIC TAPE RE EL",
+    "option_2": "DASD",
+    "option_3": "CARTRIDGE TAPE",
+    "option_4": "All kinds of devices",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 128,
+    "topic": "JCL VSAM",
+    "question": "The Basic unit of I/O Transfer for a VSAM Dataset is",
+    "option_1": "Logical Record",
+    "option_2": "Control Area",
+    "option_3": "Control Interval",
+    "option_4": "Block",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 129,
+    "topic": "JCL VSAM",
+    "question": "Statement that defines the data/file requirement for a program",
+    "option_1": "DD statement",
+    "option_2": "JOB statement",
+    "option_3": "EXEC statement",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 130,
+    "topic": "JCL VSAM",
+    "question": "The control Interval Size for a Linear Dataset is always multiples of",
+    "option_1": "32760",
+    "option_2": "4096",
+    "option_3": "8000",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 131,
+    "topic": "JCL VSAM",
+    "question": "Record access is done in an RRDS using",
+    "option_1": "Key Value",
+    "option_2": "RBA",
+    "option_3": "Page Number",
+    "option_4": "RRN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 132,
+    "topic": "JCL VSAM",
+    "question": "Which of the following is NOT a valid modal command?",
+    "option_1": "IF",
+    "option_2": "ELSE",
+    "option_3": "THEN",
+    "option_4": "GOTO",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 133,
+    "topic": "JCL VSAM",
+    "question": "In which type of cluster, records are always added at the end of the dataset?",
+    "option_1": "KSDS",
+    "option_2": "LDS",
+    "option_3": "ESDS",
+    "option_4": "RRDS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 134,
+    "topic": "JCL VSAM",
+    "question": "The first two columns in a JCL statement is known as",
+    "option_1": "Comment field",
+    "option_2": "Identifier field",
+    "option_3": "Operation field",
+    "option_4": "Parameter field",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 135,
+    "topic": "JCL VSAM",
+    "question": "Sending information coded in JCL to the program during its execution is possible by",
+    "option_1": "VALU E parameter",
+    "option_2": "PARM parameter",
+    "option_3": "MESSAGE parameter",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 136,
+    "topic": "JCL VSAM",
+    "question": "The continuation indicator character while coding IDCAMS commands is",
+    "option_1": "Hyphen",
+    "option_2": "Slash",
+    "option_3": "Comma",
+    "option_4": "Hyphen or Plus If choice d is selec ted set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 137,
+    "topic": "JCL VSAM",
+    "question": "IDCAMS is",
+    "option_1": "Used for creating user -ids",
+    "option_2": "A database management system",
+    "option_3": "Utility program for VSAM",
+    "option_4": "A JCL procedure",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 138,
+    "topic": "JCL VSAM",
+    "question": "The utility that can be used to list entries of DASD VTOC",
+    "option_1": "IEBGENER",
+    "option_2": "IEHLIST",
+    "option_3": "IEBCOPY",
+    "option_4": "IDCAMS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 139,
+    "topic": "JCL VSAM",
+    "question": "To append records to a sequential dataset, the DISP should be coded as",
+    "option_1": "DISP=OLD",
+    "option_2": "DISP=SHR",
+    "option_3": "DISP=MOD",
+    "option_4": "DISP=NEW If choice c i s selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 140,
+    "topic": "JCL VSAM",
+    "question": "An Alternate Index can be defined for which type(s) of cluster(s)?",
+    "option_1": "KSDS only",
+    "option_2": "KSDS and ESDS",
+    "option_3": "KSDS and RRDS",
+    "option_4": "KSDS, ESDS and RRDS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 141,
+    "topic": "JCL VSAM",
+    "question": "What values in the MSGLEVEL parameter is lik ely to produce the maximum output in the Job log?",
+    "option_1": "MSGLEVEL=(0,5)",
+    "option_2": "MSGLEVEL=(1,1)",
+    "option_3": "MSGLEVEL=(2,2)",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 142,
+    "topic": "JCL VSAM",
+    "question": "The IEBGENER utility requires the following DD statements:",
+    "option_1": "SYSPRINT, SYSUT1, SYSU T2, SYSIN",
+    "option_2": "SYSPRINT, SYSUTIN, SYSUTOUT",
+    "option_3": "SYSIN, SYSOUT, SYSPRINT",
+    "option_4": "SYSABEND, SYSUDUMP, STEPLIB",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 143,
+    "topic": "JCL VSAM",
+    "question": "JCL is only scanned for syntax errors and not executed when you code",
+    "option_1": "TYPE= SCAN",
+    "option_2": "TYPRUN=SCAN",
+    "option_3": "TYPERUN= SCAN",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 144,
+    "topic": "JCL VSAM",
+    "question": "The maximum allowed value for Control Area size in VSAM datasets is",
+    "option_1": "One Track",
+    "option_2": "100 Tracks",
+    "option_3": "5 Cylinders",
+    "option_4": "1 Cylinder",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 145,
+    "topic": "JCL VSAM",
+    "question": "When DSN paramete r is omitted in a DD statement, the system creates",
+    "option_1": "A permanent dataset with a default name",
+    "option_2": "A dummy dataset",
+    "option_3": "A temporary dataset with a default name",
+    "option_4": "No dataset",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 146,
+    "topic": "JCL VSAM",
+    "question": "Which one of the following directs the s ystem to search the procedure in a user library?",
+    "option_1": "PROCLIB",
+    "option_2": "JCLLIB",
+    "option_3": "STEPLIB",
+    "option_4": "JOBLIB",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 147,
+    "topic": "JCL VSAM",
+    "question": "Utility to create a base of a Generation Data Group",
+    "option_1": "IEBGENER",
+    "option_2": "IDCAMS",
+    "option_3": "IEHLIST",
+    "option_4": "IEFBR14 If choice b is sele cted set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 148,
+    "topic": "JCL VSAM",
+    "question": "In //SYSUT2 DD SYSOUT=*, the SYSOUT or output is directed to the output class specified in",
+    "option_1": "CLASS",
+    "option_2": "MSGCLASS",
+    "option_3": "MSGLEVEL",
+    "option_4": "REGION",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 149,
+    "topic": "JCL VSAM",
+    "question": "What type of cluster is the catalog?",
+    "option_1": "Sequential F ile",
+    "option_2": "Partitioned Dataset",
+    "option_3": "KSDS",
+    "option_4": "RRDS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 150,
+    "topic": "JCL VSAM",
+    "question": "The original name of the IBM SORT/MERGE program is",
+    "option_1": "IRONMAN",
+    "option_2": "SUPERMAN",
+    "option_3": "ICEMAN",
+    "option_4": "SPIDERMAN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 151,
+    "topic": "JCL VSAM",
+    "question": "One of the ways to make t he system allow a job step to run without a maximum Time limit is to code",
+    "option_1": "TIME=FOREVER",
+    "option_2": "TIME=9999",
+    "option_3": "TIME=NOLIMIT",
+    "option_4": "TIME=NOSTOP",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 152,
+    "topic": "JCL VSAM",
+    "question": "DUMMY is a",
+    "option_1": "Keyword parameter in DD statement",
+    "option_2": "Positional parameter in DD statement",
+    "option_3": "Parameter in EXEC statement",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 153,
+    "topic": "JCL VSAM",
+    "question": "How to populate an Alternate Index?",
+    "option_1": "Use CREATE CLUSTER command",
+    "option_2": "Use BLDINDEX command",
+    "option_3": "Use DEFINE PATH command",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 154,
+    "topic": "JCL VSAM",
+    "question": "Alternative Index is a cluster of type",
+    "option_1": "Sequential file",
+    "option_2": "KSDS",
+    "option_3": "LDS",
+    "option_4": "PDS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 155,
+    "topic": "JCL VSAM",
+    "question": "When both JOBLIB and STEPLIB are coded in a job, the search for the program is performed in the library coded in",
+    "option_1": "JOBLIB DD statement",
+    "option_2": "JCLLIB statement",
+    "option_3": "STEPLIB DD statement",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 156,
+    "topic": "JCL VSAM",
+    "question": "A spanned record in a VSAM dataset",
+    "option_1": "Spans Control Areas",
+    "option_2": "Spans Volumes",
+    "option_3": "Spans Control Interv als",
+    "option_4": "Is very small in size",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 157,
+    "topic": "JCL VSAM",
+    "question": "The default values for the KEYS parameter for a KSDS are",
+    "option_1": "(10 10)",
+    "option_2": "(64 0)",
+    "option_3": "(4096 2048)",
+    "option_4": "(63 1)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 158,
+    "topic": "JCL VSAM",
+    "question": "If the in -stream data contains // i n the first two positions of the data record, the DD statement for the in -stream data should contain",
+    "option_1": "the * character (Asterisk)",
+    "option_2": "the word DATA",
+    "option_3": "the ? character (Question Mark)",
+    "option_4": "Nothing special",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 159,
+    "topic": "JCL VSAM",
+    "question": "Coding SPACE=(TRK,(1,2)) indicates most likely",
+    "option_1": "A PDS to be allocated",
+    "option_2": "A Sequential DS to be allocated",
+    "option_3": "Nothing",
+    "option_4": "Both",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 160,
+    "topic": "JCL VSAM",
+    "question": "In a multi -step job, a specific step has to be executed even if a previous step abnormally terminated. What should be coded in the specific EXEC statement?",
+    "option_1": "COND=RUN",
+    "option_2": "COND=EVEN",
+    "option_3": "COND=ONLY",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 161,
+    "topic": "JCL VSAM",
+    "question": "If DISP=NE W is coded, the default for the other sub -parameters of DISP are taken as",
+    "option_1": "DISP=(NEW,CATLG, KEEP)",
+    "option_2": "DISP=(NEW,DELETE,KEEP)",
+    "option_3": "DISP=(NEW,DELETE,DELETE)",
+    "option_4": "DISP=(NEW,CATLG,CATLG)",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 162,
+    "topic": "JCL VSAM",
+    "question": "When the generation created fo r a GDG exceeds the maximum LIMIT value with EMPTY coded",
+    "option_1": "All old generations are deleted",
+    "option_2": "The catalog entries for the old generations are deleted",
+    "option_3": "The new generation is not created",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 163,
+    "topic": "JCL VSAM",
+    "question": "Backward Referencing can be used in JCL to refer to",
+    "option_1": "DSN parameter only",
+    "option_2": "VOL parameter only",
+    "option_3": "UNIT parameter",
+    "option_4": "Both DSN and VOL parameters",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 164,
+    "topic": "JCL VSAM",
+    "question": "FREESPACE parameter can be specified only for",
+    "option_1": "LDS",
+    "option_2": "KSDS",
+    "option_3": "RRDS",
+    "option_4": "ESDS",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 165,
+    "topic": "JCL VSAM",
+    "question": "A Catalogued procedure is",
+    "option_1": "A procedure written as a part of the JCL calling the procedure",
+    "option_2": "A procedure which has an entry in the Master Catalog",
+    "option_3": "A procedure which is in one of the Procedure L ibraries",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 166,
+    "topic": "JCL VSAM",
+    "question": "Which of the sub -parameters below is not a part of DCB parameter?",
+    "option_1": "LRECL",
+    "option_2": "RECFM",
+    "option_3": "UNIT",
+    "option_4": "BLKSIZE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 167,
+    "topic": "JCL VSAM",
+    "question": "ACCESS MODE IS DYNAMIC means",
+    "option_1": "Neither Sequential nor Random",
+    "option_2": "Sequential or Random",
+    "option_3": "Both Sequential and Random mixed",
+    "option_4": "Nothing",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 168,
+    "topic": "JCL VSAM",
+    "question": "Command used to check/repair the status of a VSAM data set",
+    "option_1": "REPRO",
+    "option_2": "LISTCAT",
+    "option_3": "VERIFY",
+    "option_4": "EXAMINE If choi ce c is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 169,
+    "topic": "JCL VSAM",
+    "question": "To create a new cluster exactly similar to an existing cluster, one can code",
+    "option_1": "LIKE parameter in DEFINE CLUSTER",
+    "option_2": "MODEL parameter in DEFINE CLUSTER",
+    "option_3": "CLONE parameter in DEFINE CLUSTER",
+    "option_4": "None of the above If choice b is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 170,
+    "topic": "JCL VSAM",
+    "question": "What is the order of search for locating or cataloging a dataset?",
+    "option_1": "Catalog specified in STEPCAT or JOBCAT DD statement",
+    "option_2": "Catalog with same ALIAS as the high level qualifier of the cluster",
+    "option_3": "Catalog specified by CATAL OG parameter on IDCAMS command",
+    "option_4": "Master catalog",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 171,
+    "topic": "JCL VSAM",
+    "question": "If the in -stream data in a job step contains is similar to JCL statements, this can be successfully handled only by coding",
+    "option_1": "//ddname DD DATA",
+    "option_2": "//ddname DD *",
+    "option_3": "//ddname DD DATA,DLM=xxx",
+    "option_4": "Both A & C",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 172,
+    "topic": "JCL VSAM",
+    "question": "In SHAREOPTIONS(1 3), the value 1 indicates",
+    "option_1": "Multiple Read OR one Write",
+    "option_2": "Multiple Reads And one Write",
+    "option_3": "Only One Read",
+    "option_4": "Only One Write If choice a is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 173,
+    "topic": "JCL VSAM",
+    "question": "Specifying an action to be taken, when the quantity of printing exceeds a specified limit is done by coding",
+    "option_1": "LINELIMIT parameter",
+    "option_2": "OUTLIM parameter",
+    "option_3": "PRINTMAX parameter",
+    "option_4": "LINES parameter",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 174,
+    "topic": "JCL VSAM",
+    "question": "The statement //DD1 DD DSN=&&TH605,DISP=NEW results in creating a",
+    "option_1": "Partitioned data set",
+    "option_2": "Temporary dataset",
+    "option_3": "GDG generation dataset",
+    "option_4": "Permanent Sequential dataset",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 175,
+    "topic": "JCL VSAM",
+    "question": "In a three -step job, the TIME specified in t he JOB statement is 2 Minutes. The TIME specified in Step 1 is 1 minute. The TIME specified in Step 2 is 30 seconds. The TIME specified in Step 3 is 1 minute. What is the maximum total time that will be allowed for the job?",
+    "option_1": "2 minutes 30 seconds",
+    "option_2": "2 minutes",
+    "option_3": "3 minutes",
+    "option_4": "Unlimited",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 176,
+    "topic": "JCL VSAM",
+    "question": "The time limit specified in the TIME parameter refers to",
+    "option_1": "The total elapsed time in the CPU clock",
+    "option_2": "The total time taken by CPU for execution",
+    "option_3": "The total time measured in t he operators watch",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 177,
+    "topic": "JCL VSAM",
+    "question": "The column range (margins) in which IDCAMS commands can be typed is",
+    "option_1": "Always 1 -80",
+    "option_2": "Always 2 -72",
+    "option_3": "2-72, but this can be changed by PARM parameter",
+    "option_4": "Always 10 -72",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 178,
+    "topic": "JCL VSAM",
+    "question": "If a REPRO is coded with REUSE option and the Target defined with NOREUSE is non -empty, what action will take place?",
+    "option_1": "MERGE",
+    "option_2": "LOAD",
+    "option_3": "REPRO will fail",
+    "option_4": "No action",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 179,
+    "topic": "JCL VSAM",
+    "question": "Comman d used to check the consistency of the data and index components of a KSDS cluster",
+    "option_1": "EXECUTE",
+    "option_2": "EXAMINE",
+    "option_3": "VERIFY",
+    "option_4": "REPRO",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 180,
+    "topic": "JCL VSAM",
+    "question": "The space requirement is nearly 50000 Bytes for a data set. SPACE=(50,(1,1)) is coded. What else should be coded?",
+    "option_1": "UNIT=1000",
+    "option_2": "AVGREC=U",
+    "option_3": "AVGREC=K",
+    "option_4": "UNIT=1024",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 181,
+    "topic": "JCL VSAM",
+    "question": "GDG creation involves",
+    "option_1": "Creating a Base Entry in catalog and a model DSCB in the VTOC",
+    "option_2": "Creating only Base Entry in catalog",
+    "option_3": "Creating only a model DSCB in the VTOC",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 182,
+    "topic": "JCL VSAM",
+    "question": "When INCLUDE statement is used in a JCL, the library where the INCLUDE group resides is indicated by",
+    "option_1": "JCLLIB statement",
+    "option_2": "STEPLIB DD",
+    "option_3": "JOBLIB DD",
+    "option_4": "SYSLIB DD",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 183,
+    "topic": "IMS DB",
+    "question": "Each group of logically related data elements is called a ____________.",
+    "option_1": "Segment",
+    "option_2": "Database",
+    "option_3": "DBD",
+    "option_4": "PSB",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 184,
+    "topic": "IMS DB",
+    "question": "A segmen t type that has two or more occurrences is a __________.",
+    "option_1": "Twin",
+    "option_2": "Sibling",
+    "option_3": "Dependent",
+    "option_4": "Root",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 185,
+    "topic": "IMS DB",
+    "question": "Up to _________ XDFLD statements can be defined per segment.",
+    "option_1": "32",
+    "option_2": "16",
+    "option_3": "255",
+    "option_4": "None of the above If choic e a is selected set score to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 186,
+    "topic": "IMS DB",
+    "question": "Application program must establish a/an __________ and a/an __________ to IMS resources.",
+    "option_1": "Entry point and address ability",
+    "option_2": "Entry point and exit point",
+    "option_3": "DBD and PSB",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 187,
+    "topic": "IMS DB",
+    "question": "The entry name:",
+    "option_1": "DLITCBL is required for COBOL and DLITPLI is optional for PL/I",
+    "option_2": "DLITCBL is optional for COBOL and DLITPLI is required for PL/I",
+    "option_3": "DLITCBL is required for COBOL and DLITPLI is required for PL/I",
+    "option_4": "DLITCBL is optional f or COBOL and DLITPLI is optional for PL/I",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 188,
+    "topic": "IMS DB",
+    "question": "Sensitive segments are defined in the __________.",
+    "option_1": "DBD",
+    "option_2": "PSB",
+    "option_3": "DBD and PSB",
+    "option_4": "DBD or PSB",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 189,
+    "topic": "IMS DB",
+    "question": "What is the status code for dupli cate key found for segment in INSERT MODE?",
+    "option_1": "LB",
+    "option_2": "II",
+    "option_3": "LD",
+    "option_4": "LE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 190,
+    "topic": "IMS DB",
+    "question": "The target segment is always the segment specified in the _______ SSA of your DL/I call.",
+    "option_1": "First",
+    "option_2": "Last",
+    "option_3": "SSA with command code",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 191,
+    "topic": "IMS DB",
+    "question": "When processing a database through the secondary index:",
+    "option_1": "You cannot add or delete segment types on which the target segment is directly dependent",
+    "option_2": "You can add but not delete segment types on whic h the target segment is directly dependent",
+    "option_3": "You cannot add but delete segment types on which the target segment is directly dependent",
+    "option_4": "You can add or delete segment types on which the target segment is directly dependent If choice a is selected set s core to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 192,
+    "topic": "IMS DB",
+    "question": "The program executed in an IMS batch job is ____________.",
+    "option_1": "IMSBATCH",
+    "option_2": "DFSRRC00",
+    "option_3": "DLIBATCH",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 193,
+    "topic": "IMS DB",
+    "question": "Parameters that are passed to DFSRRC00:",
+    "option_1": "DLI, PGMNAME, PSBNAME",
+    "option_2": "DLI, PSBNAME, PGMNAME",
+    "option_3": "PGMNAME, DLI, PSBNAME",
+    "option_4": "PSBNAME, PGMNAME, DLI",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 194,
+    "topic": "IMS DB",
+    "question": "Sensitive segments are defined in the ___________.",
+    "option_1": "DBD",
+    "option_2": "PSB",
+    "option_3": "ACB",
+    "option_4": "IMS If choice b is selected set sc ore to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 195,
+    "topic": "IMS DB",
+    "question": "The _____________ causes DL/I to set parentage at a non -target level.",
+    "option_1": "P",
+    "option_2": "D",
+    "option_3": "C",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 196,
+    "topic": "IMS DB",
+    "question": "The command code _____________ is valid only with the REPL call.",
+    "option_1": "P",
+    "option_2": "N",
+    "option_3": "C",
+    "option_4": "D",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 197,
+    "topic": "IMS DB",
+    "question": "_________ statement is used only when a secondary index exists.",
+    "option_1": "XDFLD",
+    "option_2": "XFLD",
+    "option_3": "SIXFLD",
+    "option_4": "LCHILD",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 198,
+    "topic": "IMS DB",
+    "question": "What happens once you issue the checkpoint call?",
+    "option_1": "A message is sent to the master console.",
+    "option_2": "A message is sent to the JES LOG.",
+    "option_3": "All of the above.",
+    "option_4": "None of the above.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 199,
+    "topic": "IMS DB",
+    "question": "Which of the following statements is true for REPL call?",
+    "option_1": "No SSAs are specified in the REPL call.",
+    "option_2": "If the SSAs are specified, they must be unqualified.",
+    "option_3": "None of the above.",
+    "option_4": "All of the above.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 200,
+    "topic": "IMS DB",
+    "question": "When the parent segment does not exist, the status code is:",
+    "option_1": "GE",
+    "option_2": "LC",
+    "option_3": "LD",
+    "option_4": "LE If choice c is selected set sc ore to 1.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 201,
+    "topic": "IMS DB",
+    "question": "Logging is essential to the ____________.",
+    "option_1": "Integrity",
+    "option_2": "Restart ability",
+    "option_3": "Recoverability",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 202,
+    "topic": "IMS DB",
+    "question": "_______________ tells IMS, to which segments in a hierarchy, the program is allowed to access.",
+    "option_1": "SENSEG",
+    "option_2": "SENFLD",
+    "option_3": "PSBGEN",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 203,
+    "topic": "IMS DB",
+    "question": "Which of the following statement(s) is/are true about HALDB?",
+    "option_1": "Logical relationship and secondary indexing a re supported.",
+    "option_2": "A migration /fallback path is provided for existing databases.",
+    "option_3": "It separates the physical database definition from the logical definition.",
+    "option_4": "All of the above.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 204,
+    "topic": "IMS DB",
+    "question": "Which call sends the message to master console and JES log?",
+    "option_1": "XRST CALL",
+    "option_2": "CHK CALL",
+    "option_3": "CHNG CALL",
+    "option_4": "SYNC CALL",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 205,
+    "topic": "IMS DB",
+    "question": "Which function(s) is/are true about PSB?",
+    "option_1": "Sending or receiving messages from online user terminals",
+    "option_2": "Accessing database record s",
+    "option_3": "Issuing IMS commands",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 206,
+    "topic": "IMS DB",
+    "question": "Which of the following issues IMS service calls, checkpoint and sync calls?",
+    "option_1": "PSB",
+    "option_2": "DBD",
+    "option_3": "PROGRAM",
+    "option_4": "None of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 207,
+    "topic": "IMS DB",
+    "question": "What is/are the way(s) in which a database can be initialized?",
+    "option_1": "Data is reloaded by the database recovery utility.",
+    "option_2": "Data is loaded by a database reload utility.",
+    "option_3": "Data is loaded by a program with the PROCOPT of L.",
+    "option_4": "All of the above.",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 208,
+    "topic": "IMS DC",
+    "question": "What type of messages IMS can accept from a terminal?",
+    "option_1": "Transaction",
+    "option_2": "Message Switches",
+    "option_3": "Commands",
+    "option_4": "All of the above",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 209,
+    "topic": "IMS DC",
+    "question": "A message is route d to another terminal, with the ________ used as the name of the destination logical terminal (LTERM).",
+    "option_1": "First 1 -to-8 bytes",
+    "option_2": "First 1 -to-4 bytes",
+    "option_3": "Last 8 bytes",
+    "option_4": "Last 4 bytes",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 210,
+    "topic": "IMS DC",
+    "question": "Output messages are queued by t he ________________.",
+    "option_1": "Transaction code",
+    "option_2": "Logical terminal",
+    "option_3": "Length of the message",
+    "option_4": "Dependent region",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 211,
+    "topic": "IMS DC",
+    "question": "For GN, CALL IO -AREA is __________________.",
+    "option_1": "LL ZZ TRANCODE SEGMENT1",
+    "option_2": "LL ZZ SEGMENT1",
+    "option_3": "LL ZZ SEG MENT",
+    "option_4": "LL ZZ TRANCODE",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 212,
+    "topic": "IMS DC",
+    "question": "Which component provides data to the application program?",
+    "option_1": "DIF",
+    "option_2": "DOF",
+    "option_3": "MID",
+    "option_4": "MOD",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 213,
+    "topic": "IMS DC",
+    "question": "Which of the following is used to send message somewhere, other than to the originating terminal?",
+    "option_1": "IO-PCB MASK",
+    "option_2": "ALT-PCB-MASK",
+    "option_3": "DB-PCB-MASK",
+    "option_4": "TP-PCB-MASK",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 214,
+    "topic": "IMS DC",
+    "question": "The __________ status code is used to identify that there are no more messages in the queue.",
+    "option_1": "QC",
+    "option_2": "QD",
+    "option_3": "QE",
+    "option_4": "QN",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 215,
+    "topic": "IMS DC",
+    "question": "The maximum number of dependent regions in IMS/TM is _______.",
+    "option_1": "255",
+    "option_2": "999",
+    "option_3": "15",
+    "option_4": "127",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 216,
+    "topic": "IMS DC",
+    "question": "If ATTR = YES is specified i n MFLD, reserved bytes are _______________.",
+    "option_1": "2 bytes at beginning of the field",
+    "option_2": "2 bytes at beginning of the IO -area",
+    "option_3": "1 byte at beginning of the field",
+    "option_4": "1 byte at beginning of the IO -area",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 217,
+    "topic": "IMS DC",
+    "question": "To erase the old data of a protected field, the application program must send _____ to that field.",
+    "option_1": "X'0000'",
+    "option_2": "X'4040'",
+    "option_3": "X'403F'",
+    "option_4": "X'40FF'",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 218,
+    "topic": "IMS DC",
+    "question": "IMS language interface module is _________________.",
+    "option_1": "DFSRRC00",
+    "option_2": "DFSLI000",
+    "option_3": "DFSLT000",
+    "option_4": "DFSHDC40",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_2"
+    ]
+  },
+  {
+    "questionnumber": 219,
+    "topic": "IMS DC",
+    "question": "Which CALL is not allowed for conversational program?",
+    "option_1": "ROLL",
+    "option_2": "ROLLS",
+    "option_3": "PURG",
+    "option_4": "CHKP",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 220,
+    "topic": "IMS DC",
+    "question": "The system literal DATE3 format is _______________.",
+    "option_1": "YY.D DD",
+    "option_2": "MM/DD/YY",
+    "option_3": "DD/MM/YY",
+    "option_4": "YY/MM/DD",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  },
+  {
+    "questionnumber": 221,
+    "topic": "IMS DC",
+    "question": "The 7th bit of the attribute (0 -7) is on for __________.",
+    "option_1": "Bright",
+    "option_2": "Numeric shift",
+    "option_3": "No display",
+    "option_4": "MDT on",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_4"
+    ]
+  },
+  {
+    "questionnumber": 222,
+    "topic": "IMS DC",
+    "question": "ROLL IMS call:",
+    "option_1": "backs out database changes to SETS token",
+    "option_2": "program retain control",
+    "option_3": "requires prior SETS call to establish token",
+    "option_4": "is an appropriate response to 'BA' status code after INIT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 223,
+    "topic": "IMS DC",
+    "question": "What is the dynamic attribute modification for PROTECT & PREMODIFIED?",
+    "option_1": "0000 0000 1010 0001",
+    "option_2": "1010 0001 0000 0000",
+    "option_3": "0000 0000 1100 0001",
+    "option_4": "1100 0001 0000 0000",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 224,
+    "topic": "IMS DC",
+    "question": "For multiple logical pages, the ISRT call i s __________.",
+    "option_1": "ISRT - |LL|0040|TEXT",
+    "option_2": "ISRT - |LL|0000|TEXT",
+    "option_3": "ISRT - |LL|0080|TEXT",
+    "option_4": "ISRT - |LL|4080|TEXT",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_1"
+    ]
+  },
+  {
+    "questionnumber": 225,
+    "topic": "IMS DC",
+    "question": "For dead lock and back out successful(BKO=Y) the status code is _________.",
+    "option_1": "BA",
+    "option_2": "BB",
+    "option_3": "BC",
+    "option_4": "U777 abend",
+    "choice_type": "Single Choice",
+    "correct_answer": [
+      "option_3"
+    ]
+  }
+]
