@@ -12,7 +12,93 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; }
+        /* semantic color variables for each theme */
+        :root {
+            --color-primary: #1e293b; /* slate-700 */
+            --color-secondary: #374151; /* slate-600 */
+            --color-accent: #facc15; /* yellow-400 */
+            --color-neutral: #111827; /* slate-900 */
+            --color-base-100: #020617;
+            --color-info: #3b82f6; /* blue-500 */
+            --color-success: #22c55e;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+            --color-fg-primary: #ffffff;
+            --color-fg-secondary: #d1d5db;
+        }
+        .theme-light {
+            --color-primary: #e5e7eb;
+            --color-secondary: #d1d5db;
+            --color-accent: #fde68a;
+            --color-neutral: #f3f4f6;
+            --color-base-100: #ffffff;
+            --color-info: #60a5fa;
+            --color-success: #4ade80;
+            --color-warning: #facc15;
+            --color-error: #f87171;
+            --color-fg-primary: #000000;
+            --color-fg-secondary: #374151;
+        }
+        .theme-blue {
+            --color-primary: #bfdbfe;
+            --color-secondary: #93c5fd;
+            --color-accent: #fef08a;
+            --color-neutral: #e0f2fe;
+            --color-base-100: #eff6ff;
+            --color-info: #3b82f6;
+            --color-success: #22c55e;
+            --color-warning: #f59e0b;
+            --color-error: #ef4444;
+            --color-fg-primary: #1e3a8a;
+            --color-fg-secondary: #1e40af;
+        }
+        .theme-solarized {
+            --color-primary: #002b36;
+            --color-secondary: #073642;
+            --color-accent: #b58900;
+            --color-neutral: #586e75;
+            --color-base-100: #fdf6e3;
+            --color-info: #268bd2;
+            --color-success: #2aa198;
+            --color-warning: #cb4b16;
+            --color-error: #dc322f;
+            --color-fg-primary: #869fa2;
+            --color-fg-secondary: #8cb3c0;
+        }
+        .theme-highcontrast {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #ffff00;
+            --color-neutral: #ffffff;
+            --color-base-100: #000000;
+            --color-info: #00ffff;
+            --color-success: #00ff00;
+            --color-warning: #ff00ff;
+            --color-error: #ff0000;
+            --color-fg-primary: #ffffff;
+            --color-fg-secondary: #ffff00;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .bg-primary { background-color: var(--color-neutral); }
+        .bg-base-100 { background-color: var(--color-base-100); }
+        .bg-info { background-color: var(--color-info); }
+        .bg-success { background-color: var(--color-success); }
+        .bg-warning { background-color: var(--color-warning); }
+        .bg-error { background-color: var(--color-error); }
+        .text-primary { color: var(--color-primary); }
+        .text-fg-secondary { color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .text-fg-secondary { color: var(--color-neutral); }
+        .text-base-100 { color: var(--color-base-100); }
+        .text-info { color: var(--color-info); }
+        .text-success { color: var(--color-success); }
+        .text-warning { color: var(--color-warning); }
+        .text-error { color: var(--color-error); }
+        .text-fg-primary { color: var(--color-fg-primary); }
+        .text-fg-secondary { color: var(--color-fg-secondary); }
+        body { font-family: 'Inter', sans-serif; background-color: inherit; color: inherit; }
         .tech-mono { font-family: 'JetBrains Mono', monospace; }
         .correct-glow { animation: glow-green 2s infinite; }
         @keyframes glow-green { 0%, 100% { box-shadow: 0 0 5px rgba(34, 197, 94, 0.2); } 50% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.6); } }
@@ -123,6 +209,7 @@
                 return saved ? JSON.parse(saved) : [];
             });
             const [showBucket, setShowBucket] = useState(false);
+            // panel always shown during drill; no state needed
 
             // user choices on home screen
             const [selectedTopics, setSelectedTopics] = useState([]);
@@ -171,6 +258,17 @@
                 localStorage.setItem('zos_flagged_ids', JSON.stringify(newArr));
             };
 
+            const getDrillColor = (idx) => {
+                // determine based on answers
+                if (!sessionAnswers[idx] || sessionAnswers[idx].length === 0) {
+                    return 'bg-secondary';
+                }
+                const sel = sessionAnswers[idx];
+                const q = sessionQuestions[idx];
+                const isCorr = q.ans.every(a => sel.includes(a)) && sel.every(s => q.ans.includes(s));
+                return isCorr ? 'bg-success' : 'bg-error';
+            };
+
             const downloadFlaggedPdf = () => {
                 const { jsPDF } = window.jspdf;
                 const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
@@ -191,27 +289,33 @@
                     doc.setFontSize(12);
                     doc.setTextColor('#0ea5e9');
                     doc.text(`Topic: ${q.topic}`, 10, 25);
-                    // Question box
+                    // render question with wrapping inside colored box
+                    // prepare question text (collapse internal whitespace)
+                    const cleanQuestion = `${idx + 1}. ${q.q}`.replace(/\s+/g, ' ').trim();
+                    const qLines = doc.splitTextToSize(cleanQuestion, 170);
+                    const qHeight = qLines.length * 7 + 8; // a little more vertical room
                     doc.setDrawColor('#2563eb');
                     doc.setFillColor('#e0e7ff');
-                    doc.roundedRect(10, 30, 190, 20, 3, 3, 'F');
+                    doc.roundedRect(10, 30, 190, qHeight, 3, 3, 'F');
                     doc.setFont('helvetica', 'bold');
                     doc.setFontSize(13);
                     doc.setTextColor('#1e293b');
-                    doc.text(`${idx + 1}. ${q.q}`, 15, 42);
-                    // Options
-                    let y = 55;
+                    doc.text(qLines, 15, 34, { lineHeightFactor: 1.2 });
+                    // Options list
+                    let y = 30 + qHeight + 10;
                     q.opt.forEach((opt, oi) => {
                         const isCorrect = q.ans.includes(oi);
+                        const cleanOpt = opt.replace(/\s+/g, ' ').trim();
+                        const optLines = doc.splitTextToSize(`${String.fromCharCode(65 + oi)}. ${cleanOpt}` + (isCorrect ? ' ✅' : ''), 172);
+                        const rectHeight = optLines.length * 7 + 6;
                         doc.setDrawColor(isCorrect ? '#22c55e' : '#cbd5e1');
                         doc.setFillColor(isCorrect ? '#dcfce7' : '#f1f5f9');
-                        doc.roundedRect(15, y - 4, 180, 10, 2, 2, 'F');
+                        doc.roundedRect(15, y - 4, 180, rectHeight, 2, 2, 'F');
                         doc.setFont('helvetica', 'normal');
                         doc.setFontSize(11);
                         doc.setTextColor('#334155');
-                        const textOpt = `${String.fromCharCode(65 + oi)}. ${opt}` + (isCorrect ? ' ✅' : '');
-                        doc.text(textOpt, 20, y + 3);
-                        y += 14;
+                        doc.text(optLines, 20, y + 2, { lineHeightFactor: 1.15 });
+                        y += rectHeight + 6;
                     });
                     // Footer
                     doc.setFontSize(10);
@@ -227,20 +331,49 @@
             const startNewDrill = () => {
                 if (loadingBank) return; // still loading
 
-                // questions that have not been correctly answered yet
-                let pool = masterBank.filter(q => !correctIds.includes(q.id));
+                // Build pool based on mode
+                let pool;
+                if (mode === 'practice') {
+                    // unattended questions only (never seen before)
+                    pool = masterBank.filter(q => !attendedIds.includes(q.id));
+                } else if (mode === 'assessment') {
+                    // unattended questions (fresh each assessment)
+                    pool = masterBank.filter(q => !attendedIds.includes(q.id));
+                } else {
+                    // custom: include everything in bank
+                    pool = masterBank.slice();
+                }
+
+                // apply topic filters uniformly
                 if (selectedTopics.length > 0) {
                     pool = pool.filter(q => selectedTopics.includes(q.topic));
                 }
+
+                // fallback when pool is empty
                 if (pool.length === 0) {
-                    // nothing left correct; fall back to full bank
-                    pool = masterBank.slice();
-                    if (selectedTopics.length > 0) {
-                        pool = pool.filter(q => selectedTopics.includes(q.topic));
+                    if (mode === 'practice' || mode === 'assessment') {
+                        // allow previously attended but not yet correct
+                        pool = masterBank.filter(q => !correctIds.includes(q.id));
+                        if (selectedTopics.length > 0) {
+                            pool = pool.filter(q => selectedTopics.includes(q.topic));
+                        }
+                    } else {
+                        // custom already full bank
+                        pool = masterBank.slice();
+                        if (selectedTopics.length > 0) {
+                            pool = pool.filter(q => selectedTopics.includes(q.topic));
+                        }
                     }
                 }
-                // shuffle and slice
-                pool = pool.sort(() => Math.random() - 0.5);
+
+                // order questions
+                if (mode === 'assessment') {
+                    pool = pool.sort(() => Math.random() - 0.5);
+                } else if (mode === 'practice') {
+                    const num = id => parseInt(id.replace(/^[^0-9]+/, ''), 10) || 0;
+                    pool = pool.sort((a,b) => num(a.id) - num(b.id));
+                }
+
                 const count = Math.max(1, Math.min(questionCount, pool.length));
                 const drillSet = pool.slice(0, count);
 
@@ -348,7 +481,7 @@
                 const count = getAttemptCount(qId);
                 if (count === 0) {
                     // neutral when never attempted
-                    return t('bg-slate-800','bg-slate-200','bg-blue-200','bg-green-200','bg-gray-300');
+                    return t('bg-primary','bg-primary','bg-primary','bg-primary','bg-primary');
                 }
                 // distinct gradient from yellow to red as attempts increase
                 const gradient = ['bg-yellow-200','bg-yellow-300','bg-orange-300','bg-orange-400','bg-red-400','bg-red-500','bg-red-600','bg-red-700'];
@@ -364,68 +497,72 @@
                 if (!feedbackGiven) {
                     if (mode === 'practice' && showAnswer) {
                         // highlight correct answer in practice peek
-                        if (isCorrect) return 'border-green-500 bg-green-500/20 text-green-400 correct-glow font-bold';
-                        return 'border-slate-800 hover:border-slate-600 bg-slate-900/50';
+                        if (isCorrect) return 'border-success bg-success/20 text-success correct-glow font-bold';
+                        return 'border-secondary hover:border-secondary/80 bg-primary/50';
                     }
                     return isUserSelected 
-                        ? 'border-blue-500 bg-blue-500/20' 
-                        : 'border-slate-800 hover:border-slate-600 bg-slate-900/50';
+                        ? 'border-info bg-info text-base-100' 
+                        : 'border-secondary hover:border-secondary/80 bg-primary/50';
                 }
 
-                if (isCorrect) return 'border-green-500 bg-green-500/20 text-green-400 correct-glow font-bold';
-                if (isUserSelected && !isCorrect) return 'border-red-500 bg-red-500/20 text-red-400 font-bold strike-through';
-                return 'border-slate-900 opacity-30 grayscale';
+                if (isCorrect) return 'border-success bg-success text-base-100 correct-glow font-bold';
+                if (isUserSelected && !isCorrect) return 'border-error bg-error text-base-100 font-bold strike-through';
+                return 'border-neutral opacity-30 grayscale';
             };
 
             return (
-                <div className={`min-h-screen p-6 flex flex-col ${t('bg-slate-950 text-white','bg-white text-slate-900','bg-blue-50 text-blue-900','bg-green-900 text-green-200','bg-black text-yellow-400')}`}>
+                <div className={`min-h-screen p-6 flex flex-col ${t('bg-base-100 text-fg-primary','bg-base-100 text-fg-primary','bg-base-100 text-fg-primary','bg-base-100 text-fg-primary','bg-base-100 text-fg-primary')}`}>
                     {/* Header Persistence Stats */}
-                    <div className={`flex justify-between items-center mb-10 border-b ${t('border-slate-800','border-slate-300','border-blue-200','border-green-700','border-yellow-400')} pb-4`}>
+                    <div className={`flex justify-between items-center mb-10 border-b ${t('border-secondary','border-secondary','border-secondary','border-secondary','border-secondary')} pb-4`}>
                         <div className="flex items-center gap-3">
                             {/* map toggle */}
                             <button
                                 onClick={() => setSidebarOpen(open => !open)}
-                                className="px-3 py-2 bg-blue-600 rounded-lg text-sm font-bold hover:bg-blue-500 transition-all"
+                                className={"px-3 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-secondary hover:bg-secondary font-fg-primary text-fg-primary')}
                                 title={sidebarOpen ? 'Hide Map' : 'Show Map'}
                             >
                                 ☰
                             </button>
 
-                            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-black">Z</div>
                             <h1 className="font-extrabold tracking-tighter text-xl">z/OS Assessment</h1>
                         </div>
                         <div className="flex items-center gap-4">
                             {view !== 'menu' && (
                                 <button
                                     onClick={() => setView('menu')}
-                                    className="px-4 py-2 bg-slate-700 rounded-lg text-sm font-bold hover:bg-slate-600 transition-all"
+                                    className={"px-4 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-secondary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                                 >
                                     Home
                                 </button>
                             )}
                             {view === 'drill' && (
-                                <div className="text-[10px] uppercase text-slate-500 font-bold tracking-widest">
+                                <div className={"text-[10px] uppercase font-bold tracking-widest " + t('text-fg-secondary','text-fg-secondary','text-info','text-success','text-accent')}>
                                     {attendedIds.length} / {loadingBank ? '...' : masterBank.length}
                                 </div>
                             )}
+                            {/* always-visible question map is on right side */}
                             {/* review bucket icon (save/floppy) */}
                             <button
                                 onClick={() => setShowBucket(true)}
-                                className="relative px-2 py-2 bg-slate-700 rounded-lg text-sm font-bold hover:bg-slate-600 transition-all"
+                                className="relative px-2 py-2 bg-secondary rounded-lg text-sm font-bold hover:bg-secondary transition-all"
                                 title="Review Bucket"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M17 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 16a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5-10H7V5h10v4z" />
                                 </svg>
                                 {flaggedIds.length > 0 && (
-                                    <span className="absolute -top-1 -right-1 bg-red-500 text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+                                    <span className="absolute -top-1 -right-1 bg-error text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
                                         {flaggedIds.length}
                                     </span>
                                 )}
                             </button>
                             <button
-                                onClick={() => setThemeIndex((themeIndex + 1) % themes.length)}
-                                className="px-4 py-2 bg-slate-700 rounded-lg text-sm font-bold hover:bg-slate-600 transition-all"
+                                onClick={() => {
+                                    const next = (themeIndex + 1) % themes.length;
+                                    setThemeIndex(next);
+                                    document.body.className = `theme-${themes[next]}`;
+                                }}
+                                className={"px-4 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-secondary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                             >
                                 {theme.charAt(0).toUpperCase() + theme.slice(1)}
                             </button>
@@ -447,13 +584,13 @@
 
                             {/* sidebar as modal panel */}
                             {sidebarOpen && (
-                                <div className="fixed left-0 top-0 bottom-0 w-96 p-4 bg-slate-900 text-white z-50 overflow-y-auto">
+                                <div className={"fixed left-0 top-0 bottom-0 w-96 p-4 z-50 overflow-y-auto " + t('bg-primary text-base-100','bg-base-100 text-fg-primary','bg-base-100 text-fg-primary','bg-base-100 text-fg-primary','bg-primary text-base-100') }>
                                     {!loadingBank && masterBank.length > 0 && (
                                         <>
-                                            <p className="text-sm font-semibold mb-4">Overall Topic Progress (click to preview):</p>
+                                            <p className="text-sm text-fg-primary font-semibold mb-4">Overall Topic Progress (click to preview):</p>
                                             {topicList.map(topic => (
                                                 <div key={topic} className="mb-6">
-                                                    <h4 className="text-lg font-bold mb-2">{topic} ({masterBank.filter(q => q.topic === topic).length}Q)</h4>
+                                                    <h4 className="text-lg text-fg-primary font-bold mb-2">{topic} ({masterBank.filter(q => q.topic === topic).length}Q)</h4>
                                                     <div className="flex flex-wrap gap-1">
                                                         {masterBank.filter(q => q.topic === topic).map(q => (
                                                             <button
@@ -463,7 +600,7 @@
                                                                     setSelectedQuestionForModal(idx);
                                                                     setShowQuestionModal(true);
                                                                 }}
-                                                                className={`w-7 h-7 rounded text-[10px] font-bold transition-all hover:scale-125 ${getColorByAttempts(q.id)} text-slate-900 hover:ring-2 hover:ring-blue-400`}
+                                                                className={`w-7 h-7 rounded text-[10px] font-bold transition-all hover:scale-125 ${getColorByAttempts(q.id)} text-fg-secondary hover:ring-2 hover:ring-info`}
                                                                 title={`${q.id}: ${q.q}\nAttempts: ${getAttemptCount(q.id)}`}
                                                             >
                                                                 {(masterBank.findIndex(x => x.id === q.id) % 100) || '.'}
@@ -479,8 +616,8 @@
 
                             {/* controls column */}
                             <div className="flex flex-col justify-center items-center text-center">
-                                <h2 className="text-5xl font-black mb-6">Ready for the Drill?</h2>
-                                <p className="text-slate-400 max-w-md mb-12">The system will fetch a fresh batch of unattended questions from your COBOL, DB2, IMS and JCL modules.</p>
+                                <h2 className="text-5xl font-fg-primary text-fg-primary mb-6">Ready for the Drill?</h2>
+                                <p className={"max-w-md mb-12 " + t('text-fg-secondary','text-fg-secondary','text-info','text-success','text-accent')}>The system will fetch a fresh batch of unattended questions from your COBOL, DB2, IMS and JCL modules.</p>
 
                                 {/* topic filters as toggle chips */}
                                 {topicList.length > 0 && (
@@ -499,8 +636,8 @@
                                                     }}
                                                     className={`px-5 py-2 rounded-2xl text-base font-semibold transition-colors 
                                                         ${selectedTopics.includes(t)
-                                                            ? 'bg-blue-600 text-white'
-                                                            : 'bg-slate-700 text-slate-300 hover:bg-slate-600'}`}
+                                                            ? 'bg-info text-base-100'
+                                                            : 'bg-secondary text-fg-secondary hover:bg-secondary/90'}`}
                                                 >
                                                     {t}
                                                 </button>
@@ -514,17 +651,17 @@
                                     <button
                                         onClick={() => setMode('practice')}
                                         className={`px-4 py-2 rounded-lg font-semibold transition-colors 
-                                            ${mode === 'practice' ? 'bg-green-500 text-white' : 'bg-slate-700 text-slate-300 hover:bg-slate-600'}`}
+                                            ${mode === 'practice' ? 'bg-info text-base-100' : 'bg-secondary text-fg-secondary hover:bg-secondary/90'}`}
                                     >Practice</button>
                                     <button
                                         onClick={() => setMode('assessment')}
                                         className={`px-4 py-2 rounded-lg font-semibold transition-colors 
-                                            ${mode === 'assessment' ? 'bg-red-500 text-white' : 'bg-slate-700 text-slate-300 hover:bg-slate-600'}`}
+                                            ${mode === 'assessment' ? 'bg-info text-base-100' : 'bg-secondary text-fg-secondary hover:bg-secondary/90'}`}
                                     >Assessment</button>
                                     <button
                                         onClick={() => setMode('custom')}
                                         className={`px-4 py-2 rounded-lg font-semibold transition-colors 
-                                            ${mode === 'custom' ? 'bg-yellow-500 text-white' : 'bg-slate-700 text-slate-300 hover:bg-slate-600'}`}
+                                            ${mode === 'custom' ? 'bg-info text-base-100' : 'bg-secondary text-fg-secondary hover:bg-secondary/90'}`}
                                     >Custom</button>
                                 </div>
                                 {mode === 'custom' && (
@@ -532,13 +669,13 @@
                                         <label className="text-sm font-semibold">Total time (mins):</label>
                                         <button
                                             onClick={() => setCustomTimeMins(prev => Math.max(0, prev - 10))}
-                                            className="px-2 py-1 bg-red-600 text-white rounded hover:bg-red-500"
+                                            className="px-2 py-1 bg-error text-white rounded hover:bg-error/90"
                                         >
                                             -10
                                         </button>
                                         <button
                                             onClick={() => setCustomTimeMins(prev => Math.max(0, prev - 5))}
-                                            className="px-2 py-1 bg-red-400 text-white rounded hover:bg-red-300"
+                                            className="px-2 py-1 bg-error/70 text-white rounded hover:bg-error/60"
                                         >
                                             -5
                                         </button>
@@ -548,17 +685,17 @@
                                             step="5"
                                             value={customTimeMins}
                                             onChange={e => setCustomTimeMins(parseFloat(e.target.value) || 0)}
-                                            className="w-24 px-2 py-1 rounded bg-slate-800 text-white text-center"
+                                            className="w-24 px-2 py-1 text-fg-primary rounded bg-secondary text-base-100 text-center"
                                         />
                                         <button
                                             onClick={() => setCustomTimeMins(prev => prev + 5)}
-                                            className="px-2 py-1 bg-green-400 text-white rounded hover:bg-green-300"
+                                            className="px-2 py-1 bg-success text-fg-primary text-white rounded hover:bg-success/90"
                                         >
                                             +5
                                         </button>
                                         <button
                                             onClick={() => setCustomTimeMins(prev => prev + 10)}
-                                            className="px-2 py-1 bg-green-600 text-white rounded hover:bg-green-500"
+                                            className="px-2 py-1 bg-success/90 text-white rounded hover:bg-success"
                                         >
                                             +10
                                         </button>
@@ -583,7 +720,7 @@
                                             max={masterBank.length || ''}
                                             value={questionCount}
                                             onChange={e => setQuestionCount(parseInt(e.target.value, 10) || 1)}
-                                            className="w-20 px-2 py-1 rounded bg-slate-800 text-white"
+                                            className="w-20 px-2 py-1 rounded bg-secondary text-base-100"
                                         />
                                     </div>
                                 </div>
@@ -592,18 +729,18 @@
                                     disabled={
                                         loadingBank || masterBank.length === 0 || questionCount < 1 || availableCount === 0
                                     }
-                                    className="px-16 py-5 bg-blue-600 rounded-2xl font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-blue-900/20 disabled:opacity-50"
+                                    className={"px-16 py-5 rounded-2xl font-fg-primary text-fg-primary text-xl hover:scale-105 active:scale-95 transition-all shadow-xl disabled:opacity-50 " + t('bg-secondary shadow-primary/20','bg-primary shadow-primary/20','bg-primary shadow-primary/20','bg-primary shadow-primary/20','bg-primary shadow-primary/20')}
                                 >
                                     {loadingBank ? 'Loading questions...' : `Start New Batch (${questionCount})`}
                                 </button>
                                 {availableCount !== undefined && !loadingBank && (
-                                    <p className="text-xs text-slate-500 mt-2">
+                                    <p className="text-xs text-fg-secondary mt-2">
                                         {availableCount} question{availableCount === 1 ? '' : 's'} available with current filters
                                     </p>
                                 )}
                                 <button 
                                     onClick={() => { localStorage.clear(); setAttendedIds([]); setQuestionAttempts({}); }}
-                                    className="mt-8 text-slate-600 text-xs hover:text-red-400 underline"
+                                    className={"mt-8 text-xs underline " + t('text-fg-secondary hover:text-info','text-fg-secondary hover:text-info','text-info hover:text-info','text-success hover:text-info','text-accent hover:text-info')} 
                                 >
                                     Reset Mastery History
                                 </button>
@@ -612,20 +749,40 @@
                     )}
 
                     {view === 'drill' && (
-                        <div className="flex-1">
+                        <div className="flex-1 flex">
                             {/* Main Content */}
-                            <div className="flex-1">
+                             <div className={"w-56 border-r p-4 overflow-y-auto h-screen "+ t('border-slate-700','border-slate-300','border-blue-300','border-green-500','border-yellow-400')}>
+                                <h3 className="text-lg font-bold mb-2">Question Map</h3>
+                                <div className="grid grid-cols-4 gap-2">
+                                    {sessionQuestions.map((q, idx) => (
+                                        <button
+                                            key={idx}
+                                            onClick={() => { setCurrentIdx(idx); setFeedbackGiven(false); setSelected(sessionAnswers[idx] || []); }}
+                                            className={`w-10 h-10 rounded ${getDrillColor(idx)} text-white text-sm font-bold flex items-center justify-center`}
+                                        >
+                                            {idx+1}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="flex-1 pl-2">
                                 <div className="flex justify-between items-end mb-10">
                                     <div>
-                                        <span className="px-3 py-1 bg-slate-800 rounded-full text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                                        <span className="px-3 py-1 bg-secondary rounded-full text-[10px] font-bold text-fg-secondary uppercase tracking-widest">
                                             Module: {sessionQuestions[currentIdx].topic}
                                         </span>
-                                        <h3 className="text-sm text-slate-500 mt-2 font-bold">Question {currentIdx + 1} of {sessionQuestions.length}</h3>
+                                        <h3 className={"text-sm mt-2 font-bold " + t('text-fg-secondary','text-fg-secondary','text-info','text-success','text-accent')}>Question {currentIdx + 1} of {sessionQuestions.length}</h3>
                                     </div>
+                                    
+                                    {(mode === 'assessment' || mode === 'custom') && (
+                                        <div className="text-error tech-mono font-bold">
+                                            Time left: {Math.floor(timeLeft/60)}:{String(timeLeft%60).padStart(2,'0')}
+                                        </div>
+                                    )}
                                     {/* flag toggle */}
                                     <button
                                         onClick={() => toggleFlag(sessionQuestions[currentIdx].id)}
-                                        className={`px-2 py-1 rounded-lg text-sm font-bold transition-all ${flaggedIds.includes(sessionQuestions[currentIdx].id) ? 'bg-blue-500 hover:bg-blue-400 text-white' : 'bg-yellow-500 hover:bg-yellow-400 text-black'}`}
+                                        className={`px-2 py-1 rounded-lg text-sm font-bold transition-all ${flaggedIds.includes(sessionQuestions[currentIdx].id) ? t('bg-secondary hover:bg-secondary/90 text-base-100','bg-secondary hover:bg-secondary/90 text-black','bg-secondary hover:bg-secondary/90 text-black','bg-secondary hover:bg-secondary/90 text-black','bg-secondary hover:bg-secondary/90 text-base-100') : t('bg-primary hover:bg-warning/90 text-fg-secondary','bg-warning hover:bg-warning/90 text-fg-secondary','bg-warning hover:bg-warning/90 text-fg-secondary','bg-warning hover:bg-warning/90 text-fg-secondary','bg-warning hover:bg-warning/90 text-fg-secondary')}`}
                                         title={flaggedIds.includes(sessionQuestions[currentIdx].id) ? 'Remove from review' : 'Mark for review'}
                                     >
                                         {flaggedIds.includes(sessionQuestions[currentIdx].id) ? (
@@ -640,17 +797,9 @@
                                             </svg>
                                         )}
                                     </button>
-                                    {(mode === 'assessment' || mode === 'custom') && (
-                                        <div className="text-red-400 tech-mono font-bold">
-                                            Time left: {Math.floor(timeLeft/60)}:{String(timeLeft%60).padStart(2,'0')}
-                                        </div>
-                                    )}
-                                    {feedbackGiven && (
-                                        <div className="text-green-500 tech-mono text-sm animate-bounce font-bold"></div>
-                                    )}
                                 </div>
 
-                                <h2 className="text-xl font-semibold leading-tight mb-6 tech-mono">
+                                <h2 className="text-xl text-fg-primary font-semibold leading-tight mb-6 tech-mono">
                                     {sessionQuestions[currentIdx].q}
                                 </h2>
 
@@ -660,9 +809,9 @@
                                             key={i}
                                             disabled={feedbackGiven}
                                             onClick={() => setSelected([i])}
-                                            className={`p-2 text-left border-2 rounded-lg transition-all flex items-start gap-2 ${getOptionStyles(i)}`}
+                                            className={`p-2 text-left text-fg-secondary border-2 rounded-lg transition-all flex items-start gap-2 ${getOptionStyles(i)}`}
                                         >
-                                            <span className="w-5 h-5 rounded bg-slate-800 flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">
+                                            <span className="w-5 h-5 rounded bg-secondary flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">
                                                 {String.fromCharCode(65 + i)}
                                             </span>
                                             <span className="text-sm">{text}</span>
@@ -678,7 +827,7 @@
                                                 // move to next question shortly after revealing
                                                 setTimeout(handleNext, 500);
                                             }}
-                                            className="px-10 py-3 bg-yellow-500 rounded-xl font-bold hover:bg-yellow-400 transition-all shadow-lg text-black"
+                                            className={"px-10 py-3 rounded-xl font-bold transition-all shadow-lg text-base-100 " + t('bg-accent hover:bg-accent','bg-accent hover:bg-accent','bg-accent hover:bg-accent','bg-accent hover:bg-accent','bg-accent hover:bg-accent')}
                                         >
                                             Peek & Next
                                         </button>
@@ -687,20 +836,21 @@
                                         <button 
                                             onClick={handleSubmit}
                                             disabled={selected.length === 0}
-                                            className="px-12 py-4 bg-blue-600 rounded-xl font-bold hover:bg-blue-500 disabled:opacity-30 transition-all shadow-lg"
+                                            className={"px-12 py-4 rounded-xl font-bold disabled:opacity-30 transition-all shadow-lg " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary')}
                                         >
                                             Verify Selection
                                         </button>
                                     ) : (
                                         <button 
                                             onClick={handleNext}
-                                            className="px-12 py-4 bg-slate-700 rounded-xl font-bold hover:bg-slate-600 flex items-center gap-3 transition-all"
+                                            className={"px-12 py-4 rounded-xl font-bold flex items-center gap-3 transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                                         >
                                             {currentIdx === sessionQuestions.length - 1 ? 'View Results' : 'Next Question'} <span>→</span>
                                         </button>
                                     )}
                                 </div>
                             </div>
+                           
                         </div>
                     )}
 
@@ -711,12 +861,12 @@
                         const qObj = sourceArray[qIndex];
                         return (
                             <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-                                <div className={`${t('bg-slate-900','bg-white','bg-blue-200','bg-green-800','bg-black')} rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}>
-                                    <div className={`sticky top-0 ${t('bg-slate-800','bg-slate-200','bg-blue-400','bg-green-600','bg-black')} p-4 flex justify-between items-center border-b ${t('border-slate-700','border-slate-300','border-blue-300','border-green-500','border-yellow-400')}`}>
+                                <div className={`${t('bg-secondary','bg-base-100','bg-base-100','bg-secondary','bg-base-100')} rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}> 
+                                    <div className={`sticky top-0 ${t('bg-secondary','bg-secondary','bg-secondary','bg-secondary','bg-secondary')} p-4 flex justify-between items-center border-b ${t('border-secondary','border-secondary','border-secondary','border-secondary','border-secondary')}`}>
                                         <h3 className="text-lg font-bold">Question {qIndex + 1}</h3>
                                         <button
                                             onClick={() => setShowQuestionModal(false)}
-                                            className="text-xl hover:text-red-400 transition-all"
+                                            className="text-xl hover:text-error transition-all"
                                         >
                                             ✕
                                         </button>
@@ -731,13 +881,13 @@
                                                     key={i}
                                                     className={`p-4 border-2 rounded-lg ${
                                                         qObj.ans.includes(i)
-                                                            ? 'border-green-500 bg-green-500/10'
-                                                            : t('border-slate-700 bg-slate-800','border-slate-300 bg-slate-50','border-blue-300 bg-blue-200','border-green-600 bg-green-700','border-yellow-400 bg-black')
+                                                            ? 'border-success bg-success/10'
+                                                            : t('border-secondary bg-primary','border-secondary bg-base-100','border-secondary bg-base-100','border-secondary bg-base-100','border-secondary bg-base-100')
                                                     }`}>
                                                     <span className="font-bold mr-3">{String.fromCharCode(65 + i)}:</span>
                                                     <span>{text}</span>
                                                     {qObj.ans.includes(i) && (
-                                                        <span className="ml-2 text-green-400 font-bold">✓ Correct</span>
+                                                        <span className="ml-2 text-success font-bold">✓ Correct</span>
                                                     )}
                                                 </div>
                                             ))}
@@ -752,14 +902,14 @@
                                                         setShowAnswer(false);
                                                         setShowQuestionModal(false);
                                                     }}
-                                                    className="flex-1 px-4 py-2 bg-blue-600 rounded-lg font-bold hover:bg-blue-500 transition-all"
+                                                    className={"flex-1 px-4 py-2 rounded-lg font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary','bg-primary hover:bg-secondary font-fg-primary text-fg-primary')}
                                                 >
                                                     Go to Question
                                                 </button>
                                             ) : null}
                                             <button
                                                 onClick={() => setShowQuestionModal(false)}
-                                                className="flex-1 px-4 py-2 bg-slate-700 rounded-lg font-bold hover:bg-slate-600 transition-all"
+                                                className={"flex-1 px-4 py-2 rounded-lg font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                                             >
                                                 Close
                                             </button>
@@ -772,19 +922,19 @@
                     {/* Bucket/flagged questions modal */}
                     {showBucket && (
                         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-                            <div className={`${t('bg-slate-900','bg-white','bg-blue-200','bg-green-800','bg-black')} rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}>
-                                <div className={`sticky top-0 ${t('bg-slate-800','bg-slate-200','bg-blue-400','bg-green-600','bg-black')} p-4 flex justify-between items-center border-b ${t('border-slate-700','border-slate-300','border-blue-300','border-green-500','border-yellow-400')}`}>
+                            <div className={`${t('bg-secondary','bg-base-100','bg-base-100','bg-secondary','bg-base-100')} rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto`}>
+                                <div className={`sticky top-0 ${t('bg-secondary','bg-secondary','bg-secondary','bg-secondary','bg-secondary')} p-4 flex justify-between items-center border-b ${t('border-secondary','border-secondary','border-secondary','border-secondary','border-secondary')}`}>
                                     <h3 className="text-lg font-bold">Review Bucket ({flaggedIds.length})</h3>
                                     <button
                                         onClick={() => setShowBucket(false)}
-                                        className="text-xl hover:text-red-400 transition-all"
+                                        className="text-xl hover:text-error transition-all"
                                     >
                                         ✕
                                     </button>
                                 </div>
                                 <div className="p-6">
                                     {flaggedIds.length === 0 ? (
-                                        <p className="text-center text-slate-400">No questions marked for review.</p>
+                                        <p className="text-center text-fg-secondary">No questions marked for review.</p>
                                     ) : (
                                         <>
                                             <div className="space-y-4">
@@ -798,7 +948,7 @@
                                                         </div>
                                                         <button
                                                             onClick={() => toggleFlag(q.id)}
-                                                            className="mt-2 text-red-500 text-sm underline"
+                                                            className="mt-2 text-error text-sm underline"
                                                         >
                                                             Remove
                                                         </button>
@@ -808,7 +958,7 @@
                                             <div className="mt-6 flex justify-end">
                                                 <button
                                                     onClick={downloadFlaggedPdf}
-                                                    className="px-6 py-2 bg-blue-600 rounded-lg font-bold hover:bg-blue-500 transition-all"
+                                                    className={"px-6 py-2 rounded-lg font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                                                 >
                                                     Download as PDF
                                                 </button>
@@ -823,38 +973,38 @@
                     {view === 'results' && sessionResults && (
                         <div className="flex-1">
                             <div className="flex justify-between items-center mb-8">
-                                <h2 className="text-4xl font-black">Quiz Completed!</h2>
+                                <h2 className="text-4xl font-fg-primary text-fg-primary">Quiz Completed!</h2>
                                 <div className="flex gap-4">
                                     <button
                                         onClick={() => setView('menu')}
-                                        className="px-6 py-2 bg-blue-600 rounded-lg font-bold hover:bg-blue-500 transition-all"
+                                        className={"px-6 py-2 rounded-lg font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                                     >
                                         New Quiz
                                     </button>
                                     <button
                                         onClick={() => { localStorage.clear(); setAttendedIds([]); setQuestionAttempts({}); setView('menu'); }}
-                                        className="px-6 py-2 bg-red-600 rounded-lg font-bold hover:bg-red-500 transition-all"
+                                        className="px-6 py-2 bg-error rounded-lg font-bold hover:bg-error/90 transition-all"
                                     >
                                         Reset All
                                     </button>
                                 </div>
                             </div>
                             <div className="grid grid-cols-4 gap-4 mb-8">
-                                <div className={`p-6 rounded-lg ${t('bg-slate-800','bg-slate-100','bg-blue-100','bg-green-700','bg-black')}`}>
-                                    <p className="text-sm text-slate-400 mb-2">Total Questions</p>
-                                    <p className="text-3xl font-black text-blue-400">{sessionResults.totalQuestions}</p>
+                                <div className={`p-6 rounded-lg ${t('bg-primary','bg-base-100','bg-base-100','bg-primary','bg-base-100')}`}>
+                                    <p className="text-sm text-fg-secondary mb-2">Total Questions</p>
+                                    <p className="text-3xl font-fg-primary text-fg-primary text-info">{sessionResults.totalQuestions}</p>
                                 </div>
-                                <div className={`p-6 rounded-lg ${t('bg-slate-800','bg-slate-100','bg-blue-100','bg-green-700','bg-black')}`}>
-                                    <p className="text-sm text-slate-400 mb-2">Mode</p>
-                                    <p className="text-3xl font-black text-purple-400">{sessionResults.mode === 'practice' ? 'Practice' : sessionResults.mode === 'assessment' ? 'Assessment' : 'Custom'}</p>
+                                <div className={`p-6 rounded-lg ${t('bg-primary','bg-base-100','bg-base-100','bg-primary','bg-base-100')}`}>
+                                    <p className="text-sm text-fg-secondary mb-2">Mode</p>
+                                    <p className="text-3xl font-fg-primary text-fg-primary text-accent">{sessionResults.mode === 'practice' ? 'Practice' : sessionResults.mode === 'assessment' ? 'Assessment' : 'Custom'}</p>
                                 </div>
-                                <div className={`p-6 rounded-lg ${t('bg-slate-800','bg-slate-100','bg-blue-100','bg-green-700','bg-black')}`}>
-                                    <p className="text-sm text-slate-400 mb-2">Progress</p>
-                                    <p className="text-2xl font-black text-green-400">{attendedIds.length} of {masterBank.length}</p>
+                                <div className={`p-6 rounded-lg ${t('bg-primary','bg-base-100','bg-base-100','bg-primary','bg-base-100')}`}>
+                                    <p className="text-sm text-fg-secondary mb-2">Progress</p>
+                                    <p className="text-2xl font-fg-primary text-fg-primary text-success">{attendedIds.length} of {masterBank.length}</p>
                                 </div>
-                                <div className={`p-6 rounded-lg ${t('bg-slate-800','bg-slate-100','bg-blue-100','bg-green-700','bg-black')}`}>
-                                    <p className="text-sm text-slate-400 mb-2">Score</p>
-                                    <p className="text-3xl font-black text-yellow-400">
+                                <div className={`p-6 rounded-lg ${t('bg-primary','bg-base-100','bg-base-100','bg-primary','bg-base-100')}`}>
+                                    <p className="text-sm text-fg-secondary mb-2">Score</p>
+                                    <p className="text-3xl font-fg-primary text-fg-primary text-warning">
                                         {(() => {
                                             const answers = sessionResults.answers || [];
                                             const correct = sessionResults.questions.reduce((c, q, idx) => {
@@ -867,9 +1017,9 @@
                                     </p>
                                 </div>
                                 {(sessionResults.mode === 'custom' || sessionResults.mode === 'assessment') && (
-                                    <div className={`p-6 rounded-lg ${t('bg-slate-800','bg-slate-100','bg-blue-100','bg-green-700','bg-black')}`}>
-                                        <p className="text-sm text-slate-400 mb-2">Time used</p>
-                                        <p className="text-3xl font-black text-red-400">
+                                    <div className={`p-6 rounded-lg ${t('bg-primary','bg-base-100','bg-base-100','bg-primary','bg-base-100')}`}>
+                                        <p className="text-sm text-fg-secondary mb-2">Time used</p>
+                                        <p className="text-3xl font-fg-primary text-fg-primary text-error">
                                             {(() => {
                                                 const secs = Math.round((sessionResults.endTime - sessionResults.startTime)/1000);
                                                 return `${Math.floor(secs/60)}:${String(secs%60).padStart(2,'0')}`;
@@ -879,7 +1029,7 @@
                                 )}
                             </div>
 
-                            <h3 className="text-2xl font-black mb-4 mt-8">Session Questions Review</h3>
+                            <h3 className="text-2xl font-fg-primary text-fg-primary mb-4 mt-8">Session Questions Review</h3>
                             <div className="space-y-4">
                                 {sessionResults.questions.map((q, idx) => {
                                     const userSel = sessionResults.answers ? sessionResults.answers[idx] || [] : [];
@@ -891,8 +1041,8 @@
                                                 const isCorrect = q.ans.includes(oIdx);
                                                 const isSelected = userSel.includes(oIdx);
                                                 let cls = '';
-                                                if (isCorrect) cls = 'text-green-400 font-bold';
-                                                if (isSelected && !isCorrect) cls = 'text-red-400 line-through';
+                                                if (isCorrect) cls = 'text-success font-bold';
+                                                if (isSelected && !isCorrect) cls = 'text-error line-through';
                                                 return (
                                                     <p key={oIdx} className={cls}>
                                                         {String.fromCharCode(65 + oIdx)}: {opt}{isSelected && !isCorrect ? ' (your choice)' : ''}{isCorrect && isSelected ? ' ✓' : ''}
@@ -904,7 +1054,7 @@
                                 )})}
                             </div>
 
-                            <h3 className="text-2xl font-black mb-4">Overall Topic Map</h3>
+                            <h3 className="text-2xl font-fg-primary text-fg-primary mb-4">Overall Topic Map</h3>
                             {topicList.map(topic => (
                                 <div key={topic} className="mb-8">
                                     <h4 className="text-lg font-bold mb-2">{topic}</h4>
@@ -913,7 +1063,7 @@
                                             <button
                                                 key={q.id}
                                                 onClick={() => alert(`${q.id}: ${q.q}\n\nAttempts: ${getAttemptCount(q.id)}`)}
-                                                className={`w-6 h-6 rounded text-[10px] font-bold transition-all hover:scale-110 ${getColorByAttempts(q.id)} text-slate-900`}
+                                                className={`w-6 h-6 rounded text-[10px] font-bold transition-all hover:scale-110 ${getColorByAttempts(q.id)} text-fg-secondary`}
                                                 title={`Q: ${q.id}, Attempts: ${getAttemptCount(q.id)}`}
                                             >
                                                 {masterBank.findIndex(x => x.id === q.id) % 100}
