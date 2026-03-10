@@ -66,7 +66,7 @@
             --color-fg-secondary: #8cb3c0;
         }
         .theme-highcontrast {
-            --color-primary: #000000;
+            --color-primary: #070707;
             --color-secondary: #1a1a1a;
             --color-accent: #ffff00;
             --color-neutral: #ffffff;
@@ -81,7 +81,7 @@
         .bg-primary { background-color: var(--color-primary); }
         .bg-secondary { background-color: var(--color-secondary); }
         .bg-accent { background-color: var(--color-accent); }
-        .bg-primary { background-color: var(--color-neutral); }
+        .bg-neutral { background-color: var(--color-neutral); }
         .bg-base-100 { background-color: var(--color-base-100); }
         .bg-info { background-color: var(--color-info); }
         .bg-success { background-color: var(--color-success); }
@@ -120,55 +120,40 @@
         const { useState, useEffect, useMemo } = React;
 
         // --- THE DATA IMPORTER ---
-        // Instead of hard-coding questions we load all JSON files from
-        // the same directory. Each file is expected to export an array of
-        // questions in the format produced by the existing JSON bank
-        // (see cobol.json for example). The loader maps them into the
-        // simplified structure used by the quiz engine.
+        // Load a single master JSON file containing every question.
+        // The file has already been merged and renumbered by topic.
 
         // helper which will be called in the component
         const loadQuestionBank = async () => {
-            const files = [
-                'cobol.json',
-                'db2.json',
-                'ims.json',
-                'jcl-vsam.json'
-            ];
-            let master = [];
-            for (const fname of files) {
-                try {
-                    const resp = await fetch(fname);
-                    if (!resp.ok) throw new Error(`failed to fetch ${fname}`);
-                    const arr = await resp.json();
-                    const mapped = arr.map(item => {
-                        // build ID from topic initial + questionnumber to
-                        // guarantee uniqueness
-                        const id = `${item.topic.charAt(0)}${item.questionnumber}`;
-                        const opts = [];
-                        for (let i = 1; i <= 4; i++) {
-                            const o = item[`option_${i}`];
-                            if (o && o.trim() !== '') opts.push(o);
-                        }
-                        const ans = (item.correct_answer || []).map(a => {
-                            const idx = parseInt(a.replace('option_',''), 10) - 1;
-                            return isNaN(idx) ? null : idx;
-                        }).filter(x => x !== null);
-                        return {
-                            id,
-                            topic: item.topic,
-                            q: item.question,
-                            opt: opts,
-                            ans
-                        };
-                    });
-                    master = master.concat(mapped);
-                } catch (e) {
-                    // missing files are ignored, but you may want to show
-                    // a console warning when debugging
-                    console.warn(e);
-                }
+            try {
+                const resp = await fetch('master.json');
+                if (!resp.ok) throw new Error('failed to fetch master.json');
+                const arr = await resp.json();
+                return arr.map(item => {
+                    // ensure a unique ID; existing files already generated one
+                    const id = `${item.topic.charAt(0)}${item.questionnumber}`;
+                    const opts = [];
+                    for (let i = 1; i <= 4; i++) {
+                        const o = item[`option_${i}`];
+                        if (o && o.trim() !== '') opts.push(o);
+                    }
+                    const ans = (item.correct_answer || []).map(a => {
+                        const idx = parseInt(a.replace('option_',''), 10) - 1;
+                        return isNaN(idx) ? null : idx;
+                    }).filter(x => x !== null);
+                    return {
+                        id,
+                        topic: item.topic,
+                        q: item.question,
+                        opt: opts,
+                        ans,
+                        questionnumber: item.questionnumber
+                    };
+                });
+            } catch (e) {
+                console.warn(e);
+                return [];
             }
-            return master;
         };
 
         const App = () => {
@@ -496,9 +481,10 @@
                 // before feedback given
                 if (!feedbackGiven) {
                     if (mode === 'practice' && showAnswer) {
-                        // highlight correct answer in practice peek
-                        if (isCorrect) return 'border-success bg-success/20 text-success correct-glow font-bold';
-                        return 'border-secondary hover:border-secondary/80 bg-primary/50';
+                        // highlight correct answer in practice peek with solid colours
+                        if (isCorrect) return 'border-success bg-success text-base-100 font-bold';
+                        // dim non-correct options so the highlight stands out
+                        return 'border-secondary opacity-30';
                     }
                     return isUserSelected 
                         ? 'border-info bg-info text-base-100' 
@@ -518,7 +504,7 @@
                             {/* map toggle */}
                             <button
                                 onClick={() => setSidebarOpen(open => !open)}
-                                className={"px-3 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-secondary hover:bg-secondary font-fg-primary text-fg-primary')}
+                                className={"px-3 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary')}
                                 title={sidebarOpen ? 'Hide Map' : 'Show Map'}
                             >
                                 ☰
@@ -530,7 +516,7 @@
                             {view !== 'menu' && (
                                 <button
                                     onClick={() => setView('menu')}
-                                    className={"px-4 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-secondary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
+                                    className={"px-4 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                                 >
                                     Home
                                 </button>
@@ -544,7 +530,7 @@
                             {/* review bucket icon (save/floppy) */}
                             <button
                                 onClick={() => setShowBucket(true)}
-                                className="relative px-2 py-2 bg-secondary rounded-lg text-sm font-bold hover:bg-secondary transition-all"
+                                className="relative px-2 py-2 bg-primary rounded-lg text-sm font-bold hover:bg-secondary transition-all"
                                 title="Review Bucket"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
@@ -562,7 +548,7 @@
                                     setThemeIndex(next);
                                     document.body.className = `theme-${themes[next]}`;
                                 }}
-                                className={"px-4 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-secondary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
+                                className={"px-4 py-2 rounded-lg text-sm font-bold transition-all " + t('bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100','bg-primary hover:bg-secondary font-fg-primary text-fg-primary text-base-100')}
                             >
                                 {theme.charAt(0).toUpperCase() + theme.slice(1)}
                             </button>
@@ -603,7 +589,7 @@
                                                                 className={`w-7 h-7 rounded text-[10px] font-bold transition-all hover:scale-125 ${getColorByAttempts(q.id)} text-fg-secondary hover:ring-2 hover:ring-info`}
                                                                 title={`${q.id}: ${q.q}\nAttempts: ${getAttemptCount(q.id)}`}
                                                             >
-                                                                {(masterBank.findIndex(x => x.id === q.id) % 100) || '.'}
+                                                                {q.questionnumber || (masterBank.findIndex(x => x.id === q.id) % 100) || '.'}
                                                             </button>
                                                         ))}
                                                     </div>
@@ -617,7 +603,7 @@
                             {/* controls column */}
                             <div className="flex flex-col justify-center items-center text-center">
                                 <h2 className="text-5xl font-fg-primary text-fg-primary mb-6">Ready for the Drill?</h2>
-                                <p className={"max-w-md mb-12 " + t('text-fg-secondary','text-fg-secondary','text-info','text-success','text-accent')}>The system will fetch a fresh batch of unattended questions from your COBOL, DB2, IMS and JCL modules.</p>
+                                <p className={"max-w-md mb-12 " + t('text-fg-secondary','text-fg-secondary','text-info','text-success','text-accent')}>The system will fetch a fresh batch of unattended questions from the consolidated master question bank.</p>
 
                                 {/* topic filters as toggle chips */}
                                 {topicList.length > 0 && (
@@ -824,12 +810,14 @@
                                         <button
                                             onClick={() => {
                                                 setShowAnswer(true);
-                                                // move to next question shortly after revealing
-                                                setTimeout(handleNext, 500);
+                                                // automatically mark correct options
+                                                setSelected(sessionQuestions[currentIdx].ans || []);
+                                                // treat peek like feedback so Next button appears
+                                                setFeedbackGiven(true);
                                             }}
                                             className={"px-10 py-3 rounded-xl font-bold transition-all shadow-lg text-base-100 " + t('bg-accent hover:bg-accent','bg-accent hover:bg-accent','bg-accent hover:bg-accent','bg-accent hover:bg-accent','bg-accent hover:bg-accent')}
                                         >
-                                            Peek & Next
+                                            Peek
                                         </button>
                                     )}
                                     {!feedbackGiven ? (
@@ -1066,7 +1054,7 @@
                                                 className={`w-6 h-6 rounded text-[10px] font-bold transition-all hover:scale-110 ${getColorByAttempts(q.id)} text-fg-secondary`}
                                                 title={`Q: ${q.id}, Attempts: ${getAttemptCount(q.id)}`}
                                             >
-                                                {masterBank.findIndex(x => x.id === q.id) % 100}
+                                                {q.questionnumber || (masterBank.findIndex(x => x.id === q.id) % 100)}
                                             </button>
                                         ))}
                                     </div>
